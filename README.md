@@ -41,8 +41,8 @@ Feel free to contact us with any questions or inquiries. You can reach us [here]
 
 To view the website locally or make changes, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/repository-name.git`
-2. Navigate to the project directory: `cd repository-name`
+1. Clone the repository: `git clone https://github.com/Beans69584/Plastics-and-Burns.git`
+2. Navigate to the project directory: `cd Plastics-and-Burns`
 3. Open the `index.html` file in your preferred web browser.
 4. If you wish to use PHP pages, ensure that the curl extension is enabled and run a local PHP web server: `php -S ip:port`
 
