@@ -9,14 +9,16 @@ The Manchester Centre for Plastic Surgery and Burns provides specialist care to 
 
 ## Table of Contents
 
-- [About](#about)
-- [Services](#services)
-- [Locations](#locations)
-- [Our Team](#our-team)
-- [Contact Us](#contact-us)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [License](#license)
+- [Manchester Centre for Plastic Surgery \& Burns](#manchester-centre-for-plastic-surgery--burns)
+  - [Table of Contents](#table-of-contents)
+  - [About](#about)
+  - [Services](#services)
+  - [Locations](#locations)
+  - [Our Team](#our-team)
+  - [Contact Us](#contact-us)
+  - [Getting Started](#getting-started)
+  - [Contributing](#contributing)
+  - [License](#license)
 
 ## About
 
@@ -52,7 +54,7 @@ Contributions are welcome! If you find any issues or want to enhance the website
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [AGPL License](LICENSE).
 
 ---
 
