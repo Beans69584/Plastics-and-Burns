@@ -378,10 +378,10 @@
         var bio = document.getElementById("bio");
         var bioText = bio.innerHTML;
         // limit it to 150 words (not characters)
-        if (bioText.split(" ").length < 400) {
+        if (bioText.split(" ").length < 75) {
             return;
         }
-        bio.innerHTML = bioText.split(" ").splice(0, 400).join(" ") + "...  ";
+        bio.innerHTML = bioText.split(" ").splice(0, 75).join(" ") + "...  ";
         // remove event listener
         bio.innerHTML += "<button id='readMore' class='text-blue-900 focus:outline-none' onclick='growText()'>Show more</button>";
 
@@ -405,7 +405,7 @@
         var bio = document.getElementById("bio");
         var bioText = bio.innerHTML;
         // limit it to 150 words (not characters)
-        bio.innerHTML = bioText.split(" ").splice(0, 400).join(" ") + "...  ";
+        bio.innerHTML = bioText.split(" ").splice(0, 75).join(" ") + "...  ";
         // remove event listener
         bio.innerHTML += "<button id='readMore' class='text-blue-900 focus:outline-none'>Show more</button>";
 
