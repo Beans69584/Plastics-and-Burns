@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This Code of Conduct outlines our expectations for all those who participate in our community, as well as the consequences for unacceptable behavior. We invite all those who participate in [Project Name] to help us create safe and positive experiences for everyone.
+This Code of Conduct outlines our expectations for all those who participate in our community, as well as the consequences for unacceptable behavior. We invite all those who participate in the creation and maintenance of this website to help us create safe and positive experiences for everyone.
 
 ## Expected Behavior
 
