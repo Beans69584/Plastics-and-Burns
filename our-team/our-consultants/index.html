@@ -344,88 +344,270 @@
     <h2 class="text-3xl font-bold">Our consultants</h2>
     <p class="mb-4 mt-4">Our team of consultants provides a full range of treatments. Please select from the list to the left or use the sections below to find a consultant by area of specialist interest.</p>
     <div class="mt-4">
-        <h3 id="abdo" class="text-2xl font-bold mt-4 mb-2">Abdominal &amp; chest wall reconstruction</h3>
+        <center>
+            <style>
+                #searchBar {
+                    text-align: center;
+                }
+            </style>
+            <input type="text" id="searchBar" class="p-2 border border-gray-300 rounded-lg mb-4 w-full" placeholder="Search for a consultant">
+        </center>
+    </div>
+    <style>
+        .linkThing .bg-gray-100 {
+            transition: all 0.3s ease-in-out !important;
+        }
+
+        .linkThing .section-heading {
+            cursor: pointer;
+        }
+
+        .linkThing .section-heading::after {
+            content: "+";
+            float: right;
+            font-size: 1.5rem;
+            margin-left: 10px;
+            transform: rotate(0deg);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .linkThing .section-heading.collapsed::after {
+            transform: rotate(90deg);
+        }
+
+        .linkThing .consultant-card {
+            display: none;
+        }
+
+        .linkThing .section-heading.expanded + .grid .consultant-card {
+            display: block;
+        }
+
+        /* Collapsed Styles */
+        .linkThing .section-heading.collapsed + .grid .consultant-card {
+            display: none;
+        }
+        
+        .collapsed .bg-gray-100 {
+            display: none;
+        }
+    </style>
+    <div class="mt-4 linkThing">
+        <h3 id="abdo" class="text-2xl font-bold mt-4 section-heading collapsed mb-2">Abdominal &amp; chest wall reconstruction</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div class="bg-gray-100 p-4 rounded-lg shadow-md linkThing">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
                 <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-kaushik-chakrabarty">Mr Kaushik Chakrabarty</a></h4>
             </div>
-            <div class="bg-gray-100 p-4 rounded-lg shadow-md linkThing">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
                 <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-christopher-duff">Mr Christopher Duff</a></h4>
             </div>
-            <div class="bg-gray-100 p-4 rounded-lg shadow-md linkThing">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
                 <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-suryakant-kanitkar">Mr Suryakant Kanitkar</a></h4>
             </div>
-            <div class="bg-gray-100 p-4 rounded-lg shadow-md linkThing">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
                 <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/miss-siobhan-oceallaigh">Miss Siobhán O'Ceallaigh</a></h4>
-            </div> 
+            </div>
         </div>
 
-        <h3 id="breast" class="text-2xl font-bold mt-4 mb-2">Breast reconstruction</h3>
+        <h3 id="breast" class="text-2xl font-bold mt-4 section-heading collapsed mb-2">Breast reconstruction</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div class="bg-gray-100 p-4 rounded-lg shadow-md linkThing">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
                 <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-jonathan-duncan">Mr Jonathan Duncan</a></h4>
             </div>
-            <div class="bg-gray-100 p-4 rounded-lg shadow-md linkThing">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
                 <h4 class="text-lg font-bold">Ms Rachel Holt</h4>
             </div>
-            <div class="bg-gray-100 p-4 rounded-lg shadow-md linkThing">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
                 <h4 class="text-lg font-bold">Mr Ranjeet Jeevan</h4>
             </div>
-            <div class="bg-gray-100 p-4 rounded-lg shadow-md linkThing">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
                 <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/miss-siobhan-oceallaigh">Miss Siobhàn O'Ceallaigh</a></h4>
             </div>
-            <div class="bg-gray-100 p-4 rounded-lg shadow-md linkThing">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
                 <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-stuart-wilson">Mr Stuart Wilson</a></h4>
             </div>
         </div>
 
-        <h3 id="burn" class="text-2xl font-bold mt-4 mb-2">Burn injuries</h3>
+        <h3 id="burn" class="text-2xl font-bold mt-4 section-heading collapsed mb-2">Burn injuries</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div class="bg-gray-100 p-4 rounded-lg shadow-md linkThing">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
                 <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-humayun-ayub-khan">Mr Humayun Ayub-Khan</a></h4>
             </div>
-            <div class="bg-gray-100 p-4 rounded-lg shadow-md linkThing">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
                 <h4 class="text-lg font-bold">Mr Mohamed Ismail Aly</h4>
             </div>
-            <div class="bg-gray-100 p-4 rounded-lg shadow-md linkThing">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
                 <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-nadeem-khwaja">Mr Nadeem Khwaja</a></h4>
             </div>
-            <div class="bg-gray-100 p-4 rounded-lg shadow-md linkThing">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
                 <h4 class="text-lg font-bold">Ms Samantha McNally</h4>
             </div>
-            <div class="bg-gray-100 p-4 rounded-lg shadow-md linkThing">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
                 <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/dr-mamta-shah">Dr Mamta Shah</a></h4>
             </div>
-            <div class="bg-gray-100 p-4 rounded-lg shadow-md linkThing">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
                 <h4 class="text-lg font-bold">Mr Zeeshan Sheikh</h4>
             </div>
         </div>
 
-        <h3 id="wrist" class="text-2xl font-bold mt-4 mb-2">Wrist surgery</h3>
+        <h3 id="cleft" class="text-2xl font-bold mt-4 section-heading collapsed mb-2">Cleft lip and palate</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div class="bg-gray-100 p-4 rounded-lg shadow-md linkThing">
-                <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/professor-vivien-lees">Professor Vivien Lees</a></h4>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
+                <h4 class="text-lg font-bold">Miss Victoria Beale</h4>
             </div>
         </div>
 
-        <h3 id="other" class="text-2xl font-bold mt-4 mb-2">Other Surgeons</h3>
+        <h3 id="cwound" class="text-2xl font-bold mt-4 section-heading collapsed mb-2">Complex wound</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div class="bg-gray-100 p-4 rounded-lg shadow-md linkThing">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
+                <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-kaushik-chakrabarty">Mr Kaushik Chakrabarty</a></h4>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
+                <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-jason-wong">Mr Jason Wong</a></h4>
+            </div>
+        </div>
+
+        <h3 id="perineal" class="text-2xl font-bold mt-4 section-heading collapsed mb-2">Gynaecological, colorectal and perineal reconstruction</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
+                <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-kaushik-chakrabarty">Mr Kaushik Chakrabarty</a></h4>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
+                <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-suryakant-kanitkar">Mr Suryakant Kanitkar</a></h4>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
+                <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/miss-siobhan-oceallaigh">Miss Siobhàn O'Ceallaigh</a></h4>
+            </div>
+        </div>
+
+        <h3 id="hand" class="text-2xl font-bold mt-4 section-heading collapsed mb-2">Hand surgery</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
+                <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-james-bedford/">Mr James Bedford</a></h4>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
+                <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-christopher-duff">Mr Christopher Duff</a></h4>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
+                <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/professor-vivien-lees">Professor Vivien Lees</a></h4>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
+                <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-anuj-mishra">Mr Anuj Mishra</a></h4>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
+                <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-adam-reid">Mr Adam Reid</a></h4>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
+                <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-robert-winterton">Mr Robert Winterton</a></h4>
+            </div>
+        </div>
+
+        <h3 id="lowerlimb" class="text-2xl font-bold mt-4 section-heading collapsed mb-2">Lower limb trauma</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
+                <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-adam-reid">Mr Adam Reid</a></h4>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
+                <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-jason-wong">Mr Jason Wong</a></h4>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
+                <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-james-bedford/">Mr James Bedford</a></h4>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
+                <h4 class="text-lg font-bold">Ms Fouzia Choukairi</h4>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
+                <h4 class="text-lg font-bold">Mr Anass Elajmi</h4>
+            </div>
+        </div>
+
+        <h3 id="paed" class="text-2xl font-bold mt-4 section-heading collapsed mb-2">Paediatric (children's) plastic surgery</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
+                <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-james-bedford/">Mr James Bedford</a></h4>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
+                <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-suryakant-kanitkar">Mr Suryakant Kanitkar</a></h4>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
+                <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/dr-mamta-shah">Dr Mamta Shah</a></h4>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
+                <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-robert-winterton">Mr Robert Winterton</a></h4>
+            </div>
+        </div>
+
+        <h3 id="skin" class="text-2xl font-bold mt-4 section-heading collapsed mb-2">Skin malignancy</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
+                <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-stuart-wilson">Mr Stuart Wilson</a></h4>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
+                <h4 class="text-lg font-bold">Mr Humayun Ayub-Khan</h4>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
+                <h4 class="text-lg font-bold"><a href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-zahir-babar">Mr Zahir Babar</a></h4>
+            </div>
+        </div>
+
+        <h3 id="other" class="text-2xl font-bold mt-4 section-heading collapsed mb-2">Other Surgeons</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
                 <h4 class="text-lg font-bold">Mr Zahir Babar</h4>
             </div>
-            <div class="bg-gray-100 p-4 rounded-lg shadow-md linkThing">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
                 <h4 class="text-lg font-bold">Mr Pratap Dutta</h4>
             </div>
-            <div class="bg-gray-100 p-4 rounded-lg shadow-md linkThing">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
                 <h4 class="text-lg font-bold">Mr Ediz Bozman</h4>
             </div>
-            <div class="bg-gray-100 p-4 rounded-lg shadow-md linkThing">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md consultant-card">
                 <h4 class="text-lg font-bold">Mr Razli Dalan</h4>
             </div>
         </div>
     </div>
-</section>
+</section><script>
+    const searchBar = document.getElementById('searchBar');
+    const sectionHeadings = Array.from(document.querySelectorAll('.linkThing .section-heading'));
 
+    searchBar.addEventListener('input', function () {
+        const searchValue = searchBar.value.trim().toLowerCase();
+
+        const consultantCards = Array.from(document.querySelectorAll('.linkThing .grid .consultant-card'));
+
+        consultantCards.forEach(function (consultantCard) {
+            const consultantName = consultantCard.querySelector('h4').innerText.toLowerCase();
+
+            if (consultantName.includes(searchValue)) {
+                consultantCard.style.display = 'block';
+            } else {
+                consultantCard.style.display = 'none';
+            }
+        });
+
+        sectionHeadings.forEach(function (section) {
+            const consultantCardsInCategory = Array.from(section.nextElementSibling.querySelectorAll('.grid .consultant-card'));
+            const visibleConsultantCards = consultantCardsInCategory.filter(function (consultantCard) {
+                return consultantCard.style.display === 'block';
+            });
+
+            if (visibleConsultantCards.length > 0) {
+                section.classList.remove('collapsed');
+                section.classList.add('expanded');
+            } else {
+                section.classList.remove('expanded');
+                section.classList.add('collapsed');
+            }
+        });
+    });
+
+    sectionHeadings.forEach(function (section) {
+        section.addEventListener('click', function () {
+            section.classList.toggle('collapsed');
+            section.classList.toggle('expanded');
+        });
+    });
+</script>
     </main>
     <footer class="bg-blue-900 py-4">
         <div class="container mx-auto px-4">
