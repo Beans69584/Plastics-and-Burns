@@ -1,0 +1,181 @@
+<link rel="icon" href="https://mcrplasticsurgeryandburns.co.uk//favicon.ico">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel=\"icon\" href=\"https://mcrplasticsurgeryandburns.co.uk//favicon.ico\">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our consultants — Manchester Centre for Plastic Surgery & Burns</title>
+    <!-- Add Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+        #titleText {
+            font-family: 'Lato';
+            color: #005eb8;
+        }
+
+        #content ul li a {
+            color: #005eb8;
+            transition: color 0.2s ease-in-out;
+        }
+
+        #content ul li a:hover {
+            /* nhs dark blue */
+            color: #003087;
+        }
+
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white">
+        <div class="container mx-auto px-4 py-4 flex items-center">
+            <div>
+                <img src="./mft.png" alt="Manchester University NHS Foundation Trust" id="logo" class="h-16">
+            </div>
+            <div>
+                <h1 class="text-4xl font-bold" id="titleText">The Manchester Centre for Plastic Surgery and Burns</h1>
+            </div>
+        </div>
+        <nav class="bg-blue-900">
+            <div class="container mx-auto px-4 py-4">
+                <ul class="flex justify-center text-white">
+                    <li class="mr-6"><a href="./">Home</a></li>
+                    <li class="mr-6"><a href="./Services.html">Our services</a></li>
+                    <li class="mr-6"><a href="./Locations.html">Our locations</a></li>
+                    <li class="mr-6"><a href="./OurTeam.html">Our team</a></li>
+                    <li><a href="https://www.plasticsandburns.co.uk/contact-us/">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+     </header>
+<script>
+    const mobileMenuButton = document.getElementById('mobileMenuButton');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileCloseButton = document.getElementById('mobileCloseButton');
+
+    mobileMenuButton.addEventListener('click', () => {
+        // check if it's been closed before as it will be translated down and we need to reset that
+        if (mobileNav.style.transform === 'translateY(100%)') {
+            mobileNav.style.transform = 'translateY(0)';
+            mobileNav.style.display = 'block';
+        }
+        mobileNav.classList.add('open');
+    });
+
+    mobileCloseButton.addEventListener('click', () => {
+        mobileNav.style.transform = 'translateY(100%)';
+
+        // Delay hiding the mobile navigation menu to allow the slide-down animation to play
+        setTimeout(() => {
+            mobileNav.style.display = 'none';
+        }, 300);
+    });
+</script>
+    <main class="container mx-auto px-4 py-8 flex">
+        <aside class="w-1/4 bg-gray-200 px-4 py-8">
+            <h2 class="text-3xl font-bold">Index</h2>
+            <ul class="mt-4">
+                <li class="mb-2"><a class="text-blue-500 hover:text-blue-700" href="#abdo">Abdominal &amp; chest wall reconstruction</a></li>
+                <li class="mb-2"><a class="text-blue-500 hover:text-blue-700" href="#breast">Breast reconstruction</a></li>
+                <li class="mb-2"><a class="text-blue-500 hover:text-blue-700" href="#burn">Burn injuries</a></li>
+                <li class="mb-2"><a class="text-blue-500 hover:text-blue-700" href="#cleft">Cleft lip and palate</a></li>
+                <li class="mb-2"><a class="text-blue-500 hover:text-blue-700" href="#perineal">Colorectal reconstruction</a></li>
+                <li class="mb-2"><a class="text-blue-500 hover:text-blue-700" href="#cwound">Complex wound</a></li>
+                <li class="mb-2"><a class="text-blue-500 hover:text-blue-700" href="#perineal">Gynaecological reconstruction</a></li>
+                <li class="mb-2"><a class="text-blue-500 hover:text-blue-700" href="#hand">Hand surgery</a></li>
+                <li class="mb-2"><a class="text-blue-500 hover:text-blue-700" href="#lowerlimb">Lower limb trauma</a></li>
+                <li class="mb-2"><a class="text-blue-500 hover:text-blue-700" href="#paed">Paediatric (children's) plastic surgery</a></li>
+                <li class="mb-2"><a class="text-blue-500 hover:text-blue-700" href="#skin">Skin malignancy</a></li>
+                <li class="mb-2"><a class="text-blue-500 hover:text-blue-700" href="#wrist">Wrist surgery</a></li>
+            </ul>
+        </aside>
+       <section id="content" class="bg-white shadow-md p-6">
+            <h2 class="text-3xl font-bold">Our consultants</h2>
+            <p class="mb-4">Our team of consultants provide a full range of treatments. Please select from the list to the left, or use the sections below to find a consultant by area of specialist interest.</p>
+            <h3 id="abdo" class="text-2xl font-bold mt-4">Abdominal &amp; chest wall reconstruction</h3>
+            <ul>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=mr-kaushik-chakrabarty">Mr Kaushik Chakrabarty</a></li>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=mr-christopher-duff">Mr Christopher Duff</a></li>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=mr-suryakant-kanitkar">Mr Suryakant Kanitkar</a></li>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=miss-siobhan-oceallaigh">Miss Siobhán O'Ceallaigh</a></li>
+            </ul>
+            <h3 id="breast" class="text-2xl font-bold mt-4">Breast reconstruction</h3>
+            <ul>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=mr-jonathan-duncan">Mr Jonathan Duncan</a></li>
+                <li>Ms Rachel Holt</li>
+                <li>Mr Ranjeet Jeevan</li>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=miss-siobhan-oceallaigh">Miss Siobhàn O'Ceallaigh</a></li>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=mr-stuart-wilson">Mr Stuart Wilson</a></li>
+            </ul>
+            <h3 id="burn" class="text-2xl font-bold mt-4">Burn injuries</h3>
+            <ul>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=mr-humayun-ayub-khan">Mr Humayun Ayub-Khan</a></li>
+                <li>Mr Mohamed Ismail Aly</li>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=mr-nadeem-khwaja">Mr Nadeem Khwaja</a></li>
+                <li>Ms Samantha McNally</li>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=dr-mamta-shah">Dr Mamta Shah</a></li>
+                <li>Mr Zeeshan Sheikh</li>
+            </ul>
+            <h3 id="cleft" class="text-2xl font-bold mt-4">Cleft lip and palate</h3>
+            <ul>
+                <li>Miss Victoria Beale</li>
+            </ul>
+            <h3 id="cwound" class="text-2xl font-bold mt-4">Complex wound</h3>
+            <ul>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=mr-kaushik-chakrabarty">Mr Kaushik Chakrabarty</a></li>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=mr-jason-wong">Mr Jason Wong</a></li>
+            </ul>
+            <h3 id="perineal" class="text-2xl font-bold mt-4">Gynaecological, colorectal and perineal reconstruction</h3>
+            <ul>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=mr-kaushik-chakrabarty">Mr Kaushik Chakrabarty</a></li>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=mr-suryakant-kanitkar">Mr Suryakant Kanitkar</a></li>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=miss-siobhan-oceallaigh">Miss Siobhàn O'Ceallaigh</a></li>
+            </ul>
+            <h3 id="hand" class="text-2xl font-bold mt-4">Hand surgery</h3>
+            <ul>
+                <li><a href="https://www.plasticsandburns.co.uk/our-consultants/mr-james-bedford/">Mr James Bedford</a> (specialty lead for Burns &amp; Plastic Surgery)</li>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=mr-christopher-duff">Mr Christopher Duff</a></li>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=professor-vivien-lees">Professor Vivien Lees</a></li>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=mr-jason-wong">Mr Anuj Mishra</a></li>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=mr-adam-reid">Mr Adam Reid</a></li>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=mr-robert-winterton">Mr Robert Winterton</a></li>
+            </ul>
+            <h3 id="lowerlimb" class="text-2xl font-bold mt-4">Lower limb trauma</h3>
+            <ul>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=mr-adam-reid">Mr Adam Reid</a></li>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=mr-jason-wong">Mr Jason Wong</a></li>
+                <li><a href="https://www.plasticsandburns.co.uk/our-consultants/mr-james-bedford/">Mr James Bedford</a></li>
+                <li>Ms Fouzia Choukairi</li>
+                <li>Mr Anass Elajmi</li>
+            </ul>
+            <h3 id="paed" class="text-2xl font-bold mt-4">Paediatric (children's) plastic surgery</h3>
+            <ul>
+                <li><a href="https://www.plasticsandburns.co.uk/our-consultants/mr-james-bedford/">Mr James Bedford</a> (hand)</li>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=mr-suryakant-kanitkar">Mr Suryakant Kanitkar</a> (burns and general paediatrics)</li>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=dr-mamta-shah">Dr Mamta Shah</a> (burns, scars and ear abnormalities)</li>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=mr-robert-winterton">Mr Robert Winterton</a> (hand)</li>
+            </ul>
+            <h3 id="skin" class="text-2xl font-bold mt-4">Skin malignancy</h3>
+            <ul>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=mr-humayun-ayub-khan">Mr Humayun Ayub-Khan</a></li>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=mr-christopher-duff">Mr Christopher Duff</a></li>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=mr-stuart-wilson">Mr Stuart Wilson</a></li>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=other-surgeons">Mr Zahir Babar</a></li>
+                <li>Mr Pratap Dutta</li>
+            </ul>
+            <h3 id="wrist" class="text-2xl font-bold mt-4">Wrist surgery</h3>
+            <ul>
+                <li><a href="http://www.plasticsandburns.co.uk/index.php?id=professor-vivien-lees">Professor Vivien Lees</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer class="bg-blue-900 py-4">
+        <div class="container mx-auto px-4">
+            <p class="text-center text-white">Part of <a href="http://www.mft.nhs.uk/" class="text-blue-200 hover:text-white">Manchester University NHS Foundation Trust</a></p>
+        </div>
+    </footer>
+</body>
+</html>

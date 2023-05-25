@@ -1,0 +1,371 @@
+    <link rel="icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" type="image/png" sizes="96x96">
+    <link rel="icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" sizes="180x180">
+    <link rel="mask-icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" color="#005eb8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UHSM, Wythenshawe Hospital — Manchester Centre for Plastic Surgery & Burns</title>
+    <!-- Add Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://mcrplasticsurgeryandburns.co.uk/style.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <style>
+        /* import font for easier reading */
+        /* something like Nunito */
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+        body {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+        }
+
+        #titleText {
+            font-family: 'Lato';
+            color: #005eb8;
+        }
+
+        /* navbar links hover */
+        #nav a:hover {
+            transition: all 0.2s ease-in-out;
+            /* white by default so dim it a bit */
+            color: #d9d9d9;
+        }
+
+        /* our services/locations divs hover cubic-bezier effect */
+
+        @media screen and (max-width: 767px) {
+            /* Example: Adjust styles for mobile devices */
+            #titleText {
+                display: none;
+            }
+
+            #logo {
+                display: none;
+            }
+
+            #nav {
+                display: none;
+            }
+
+            #mobileMenuButton {
+                display: block;
+            }
+
+            #mobileNav {
+                display: none;
+            }
+
+            /* Adjust other styles for mobile */
+        }
+
+        @media screen and (max-width: 1100px) {
+            /* Example: Adjust styles for mobile devices */
+            #titleText {
+                display: none;
+            }
+
+            #logo {
+                display: none;
+            }
+
+            #nav {
+                display: none;
+            }
+
+            #mobileMenuButton {
+                display: block;
+            }
+
+            #mobileNav {
+                display: none;
+            }
+
+            /* Adjust other styles for mobile */
+        }
+
+        /* Styles for mobile navigation menu */
+        @keyframes fadeDown {
+            0% {
+                opacity: 0;
+                transform: translateY(0%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes reveal {
+            0% {
+                opacity: 0;
+                transform: translateY(20%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        * {
+            transition: all 0.3s ease-in-out;
+        }
+
+        @media screen and (max-width: 1100px) {
+            #mobileNav {
+                display: none;
+                background-color: #005eb8;
+                padding: 1rem;
+                opacity: 0;
+                transform: translateY(20%);
+                transition: all 0.3s ease-in-out;
+            }
+
+            #mobileNav.open {
+                display: block;
+                opacity: 1;
+                transform: translateY(0);
+                animation: reveal 0.3s ease-in-out;
+            }
+
+            #mobileNav ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            #mobileNav li {
+                margin-bottom: 1rem;
+            }
+
+            #mobileNav a {
+                color: white;
+                font-size: 1.2rem;
+                text-decoration: none;
+            }
+        }
+
+         .hidden {
+            display: none;
+        }
+
+        .bg-blue-900 {
+            /* nhs blue */
+            background-color: #005eb8;
+        }
+
+        /* New Mobile Navigation Menu Styles */
+        .mobile-nav-toggle {
+            display: none;
+        }
+
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #005eb8;
+            padding: 1rem;
+            opacity: 0;
+            transform: translateY(20%);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .mobile-nav.open {
+            opacity: 1;
+            transform: translateY(0);
+            animation: reveal 0.3s ease-in-out;
+        }
+
+        .mobile-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mobile-nav li {
+            margin-bottom: 1rem;
+        }
+
+        .mobile-nav a {
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+        #shrink {
+            /* nhs dark blue */
+           color: #003087;
+            margin-left: 10px;
+        }
+
+        #readmore {
+            /* nhs dark blue */
+            color: #003087;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-white">
+        <div id="thing" class="container mx-auto px-4 py-4 flex items-center">
+            <div>
+                <img src="https://mcrplasticsurgeryandburns.co.uk/cfpsb.jpg" alt="Manchester University NHS Foundation Trust" id="logo" class="h-16">
+            </div>
+            <div>
+                <h1 class="text-4xl font-bold" id="titleText">The Manchester Centre for Plastic Surgery and Burns</h1>
+            </div>
+            <button id="mobileMenuButton" class="mobile-nav-toggle text-blue-900 focus:outline-none md:hidden">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M3 5h18a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2zm0 7h18a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2zm0 7h18a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+        <nav id="nav" class="bg-blue-900">
+            <div class="container mx-auto px-4 py-4">
+                <ul class="flex justify-center text-white">
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/">Home</a></li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/News.html">News</a></li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/Services.html">Our services</a></li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/Locations.html">Our locations</a>
+                    </li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/OurTeam.html">Our team</a></li>
+                    <li><a href="https://mcrplasticsurgeryandburns.co.uk/contact-us/">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+ <nav id="mobileNav" class="mobile-nav hidden">
+    <div class="container mx-auto px-4 py-4">
+        <button id="mobileCloseButton" class="text-white text-2xl absolute top-4 right-4 focus:outline-none">&times;</button>
+        <ul class="text-white">
+            <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/">Home</a></li>
+            <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/News.html">News</a></li>
+            <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/Services.html">Our services</a></li>
+            <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/Locations.html">Our locations</a></li>
+            <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/OurTeam.html">Our team</a></li>
+            <li><a href="https://mcrplasticsurgeryandburns.co.uk/contact-us/">Contact us</a></li>
+        </ul>
+    </div>
+</nav>
+     </header>
+<script>
+    const mobileMenuButton = document.getElementById('mobileMenuButton');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileCloseButton = document.getElementById('mobileCloseButton');
+
+    mobileMenuButton.addEventListener('click', () => {
+        // check if it's been closed before as it will be translated down and we need to reset that
+        if (mobileNav.style.transform === 'translateY(100%)') {
+            mobileNav.style.transform = 'translateY(0)';
+            mobileNav.style.display = 'block';
+        }
+        mobileNav.classList.add('open');
+    });
+
+    mobileCloseButton.addEventListener('click', () => {
+        mobileNav.style.transform = 'translateY(100%)';
+
+        // Delay hiding the mobile navigation menu to allow the slide-down animation to play
+        setTimeout(() => {
+            mobileNav.style.display = 'none';
+        }, 300);
+    });
+</script>
+
+
+<main class="container mx-auto px-4 py-8">
+    <article class="bg-white shadow-md rounded-lg p-6 shadow-md">
+        <h2 class="text-3xl font-bold mb-4">UHSM, Wythenshawe Hospital</h2>
+        <p class="text-gray-800 mb-6">Wythenshawe is a large major acute teaching hospital in South Manchester.&nbsp;&nbsp; Wythenshawe is our main hub for adult plastic surgery and burns, as well as the children’s hand service and our sub-specialty clinics.</p>
+
+        <h3 class="text-2xl font-bold">Ward F1, Adults</h3>
+        <hr class="my-4">
+        
+            <div class="bg-gray-100 shadow rounded-lg p-6">
+                <p class="text-gray-800">The main Plastic Surgery ward is F1, a 26 bed adult facility for our in patients, staffed by specifically trained plastic surgery nurses with expertise in wound care, perioperative patient management and monitoring of flaps after microsurgical free tissue transfer.</p>
+            </div>
+
+		<h3 class="text-2xl font-bold mt-8">The Burns Centre</h3>
+		<hr class="my-4">
+            <div class="bg-gray-100 shadow rounded-lg p-6">
+                <p class="text-gray-800">The unit is a modern, purpose-built area with 12 beds in total, of these two are intensive care ‘level 3’ rooms for the most complex cases and a further two are designated, isolated high dependency beds.&nbsp;&nbsp; The Burns Centre has its own operating suite which can be made available on a 24-hour basis for emergency admissions.</p>
+            </div>
+        </div>
+
+        <h3 class="text-2xl font-bold mt-8">Ward F8, Paediatrics</h3>
+        <hr class="my-4">
+        <div class="bg-gray-100 shadow rounded-lg p-6">
+            <p class="text-gray-800">F8 is Wythenshawe’s children’s ward.&nbsp; F8 also has an attached Day Surgery unit; much of the congenital hand surgery is performed on a day case basis.&nbsp;&nbsp; Directly underneath the ward is the Starlight children’s outpatient clinic.</p>
+        </div>
+
+        <h3 class="text-2xl font-bold mt-8">Treatment and Diagnostic Centre (TDC)</h3>
+        <hr class="my-4">
+        <div class="bg-gray-100 shadow rounded-lg p-6">
+            <p class="text-gray-800">TDC is a combined outpatient clinic and theatre complex.&nbsp;&nbsp; The Manchester Centre for Plastic Surgery and Burns has three theatres in TDC with nursing, ODP and support staff versed in all aspects of trauma and elective reconstructive operating.&nbsp;&nbsp; TDC is also the site of all of our adult clinics.</p>
+        </div>
+
+        <h3 class="text-2xl font-bold mt-8">Services provided here</h3>
+        <hr class="my-4">
+        <div class="bg-gray-100 shadow rounded-lg p-6">
+            <ul>
+				<style>
+					#link {
+						/* nhs link blue */
+						color: #005eb8;
+						transition: color 0.2s ease;
+						text-decoration: none;
+					}
+
+					#link:hover {
+						/* nhs link hover blue */
+						color: #003087;
+					}
+
+					#link:visited {
+						/* nhs link visited blue */
+						color: #4c2c92;
+					}
+				</style>
+                <li><a id="link" href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/abdominal-chest-wall-reconstruction">Abdominal &amp; chest wall reconstruction</a></li>
+                <li><a id="link" href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/burns">Adult burns</a></li>
+                <li><a id="link" href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/body-contouring">Body contouring</a></li>
+                <li><a id="link" href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/breast-surgery">Breast surgery</a></li>
+                <li><a id="link" href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/cleft-lip-palate">Adult revisional cleft lip &amp; palate</a></li>
+                <li><a id="link" href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/hand-surgery">Hand surgery</a></li>
+                <li><a id="link" href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/lower-limb-trauma">Lower limb trauma</a></li>
+                <li><a id="link" href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/paediatric-plastic-surgery">Paediatric plastic surgery</a></li>
+                <li><a id="link" href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/gynaecologicalcolorectalhydradenitispilonidal-disease-reconstruction">Pelvic &amp; perineal surgery</a></li>
+                <li><a id="link" href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/skin-malignancy-melanoma-basal-cell-and-squamous-cell-carcinoma">Skin malignancy</a></li>
+            </ul>
+        </div>
+
+        <h3 class="text-2xl font-bold mt-8">Consultants working here</h3>
+        <hr class="my-4">
+        <div class="bg-gray-100 shadow rounded-lg p-6">
+            <ul>
+                <li><a id="link" href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-humayun-ayub-khan">Mr Humayun Ayub-Khan</a></li>
+                <li><a id="link" href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-kaushik-chakrabarty">Mr Kaushik Chakrabarty</a></li>
+                <li><a id="link" href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-christopher-duff">Mr Christopher Duff</a></li>
+                <li><a id="link" href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-jonathan-duncan">Mr Jonathan Duncan</a></li>
+                <li><a id="link" href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-kenneth-dunn">Mr Kenneth Dunn</a></li>
+                <li><a id="link" href="https://mcrplasticsurgeryandburns.co.uk/our-team/our-consultants/mr-john-wild">Mr John Wild</a></li>
+            </ul>
+        </div>
+    </article>
+</main>
+    <footer class="bg-blue-900 py-4">
+        <div class="container mx-auto px-4">
+            <p class="text-center text-white">Part of <a href="http://www.mft.nhs.uk/" class="text-blue-200 hover:text-white">Manchester University NHS Foundation Trust</a></p>
+        </div>
+    </footer>
+</body>
+</html>

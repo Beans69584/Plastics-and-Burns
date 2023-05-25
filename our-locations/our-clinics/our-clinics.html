@@ -1,0 +1,382 @@
+    <link rel="icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" type="image/png" sizes="96x96">
+    <link rel="icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" sizes="180x180">
+    <link rel="mask-icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" color="#005eb8">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our clinics — Manchester Centre for Plastic Surgery & Burns</title>
+    <!-- Add Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://mcrplasticsurgeryandburns.co.uk/style.css">
+    <style>
+		@font-face {
+    font-family: 'frutiger';
+    /* url is /assets/fonts/frutiger-webfont.woff/woff2 */
+    src: url('https://mcrplasticsurgeryandburns.co.uk/assets/fonts/frutiger-webfont.woff2') format('woff2'),
+        url('https://mcrplasticsurgeryandburns.co.uk/assets/fonts/frutiger-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#titleText {
+    font-family: 'frutiger';
+    /* nhs blue */
+    color: #005eb8;
+}
+@media screen and (max-width: 767px) {
+    /* Example: Adjust styles for mobile devices */
+    #titleText {
+        display: none;
+    }
+    #logo {
+        display: none;
+    }
+    #nav {
+        display: none;
+    }
+    #mobileMenuButton {
+        display: block;
+    }
+    #mobileNav {
+        display: none;
+    }
+
+    /* Adjust other styles for mobile */
+}
+
+@media screen and (max-width: 767px) {
+    /* Example: Adjust styles for mobile devices */
+    #titleText {
+        display: none;
+    }
+    #logo {
+        display: none;
+    }
+    #nav {
+        display: none;
+    }
+    #mobileMenuButton {
+        display: block;
+    }
+    #mobileNav {
+        display: none;
+    }
+
+    /* Adjust other styles for mobile */
+}
+
+@media screen and (max-width: 767px) {
+    /* Example: Adjust styles for mobile devices */
+    #titleText {
+        display: none;
+    }
+    #logo {
+        display: none;
+    }
+    #nav {
+        display: none;
+    }
+    #mobileMenuButton {
+        display: block;
+    }
+    #mobileNav {
+        display: none;
+    }
+
+    /* Adjust other styles for mobile */
+}
+
+@media screen and (max-width: 1100px) {
+    /* Example: Adjust styles for mobile devices */
+    #titleText {
+        display: none;
+    }
+    #logo {
+        display: none;
+    }
+    #nav {
+        display: none;
+    }
+    #mobileMenuButton {
+        display: block;
+    }
+    #mobileNav {
+        display: none;
+    }
+
+    /* Adjust other styles for mobile */
+}
+/* Styles for mobile navigation menu */
+/* Styles for mobile navigation menu */
+/* Styles for mobile navigation menu */
+@keyframes fadeDown {
+	0% {
+		opacity: 0;
+		transform: translateY(0%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes reveal {
+	0% {
+		opacity: 0;
+		transform: translateY(20%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+* {
+	transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 1100px) {
+    #mobileNav {
+        display: none;
+        background-color: #005eb8;
+        padding: 1rem;
+        opacity: 0;
+        transform: translateY(20%);
+            transition: all 0.3s ease-in-out;
+    }
+
+    #mobileNav.open {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+		animation: reveal 0.3s ease-in-out;
+    }
+
+    #mobileNav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #mobileNav li {
+        margin-bottom: 1rem;
+    }
+
+    #mobileNav a {
+        color: white;
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+}
+
+
+         .hidden {
+            display: none;
+        }
+
+        .bg-blue-900 {
+            /* nhs blue */
+            background-color: #005eb8;
+        }
+
+        /* New Mobile Navigation Menu Styles */
+        .mobile-nav-toggle {
+            display: none;
+        }
+
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #005eb8;
+            padding: 1rem;
+            opacity: 0;
+            transform: translateY(20%);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .mobile-nav.open {
+            opacity: 1;
+            transform: translateY(0);
+            animation: reveal 0.3s ease-in-out;
+        }
+
+        .mobile-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mobile-nav li {
+            margin-bottom: 1rem;
+        }
+
+        .mobile-nav a {
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-white">
+ <div id="thing" class="container mx-auto px-4 py-4 flex items-center">
+        <div>
+            <img src="https://mcrplasticsurgeryandburns.co.uk/mft.png" alt="Manchester University NHS Foundation Trust" id="logo" class="h-16">
+        </div>
+        <div>
+            <h1 class="text-4xl font-bold" id="titleText">The Manchester Centre for Plastic Surgery and Burns</h1>
+        </div>
+        <button id="mobileMenuButton" class="text-blue-900 focus:outline-none md:hidden">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" d="M3 5h18a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2zm0 7h18a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2zm0 7h18a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2z" clip-rule="evenodd"></path>
+            </svg>
+        </button>
+    </div>
+        <nav id="nav" class="bg-blue-900">
+            <div class="container mx-auto px-4 py-4">
+                <ul class="flex justify-center text-white">
+                    <li class="mr-6"><a href="../../www_plasticsandburns_co_default.html" title="Home page">Home</a></li>
+                    <li class="mr-6"><a href="../../our-services/our-services.html" title="Our services">Our services</a></li>
+                    <li class="mr-6"><a href="../our-locations.html" title="Our locations">Our locations</a></li>
+                    <li class="mr-6"><a href="https://beansbbeans.com/our-team/our-team.html" title="Our team">Our team</a></li>
+                    <li><a href="../.https://mcrplasticsurgeryandburns.co.uk/contact-us//contact-us.html" title="Contact us">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="mobileNav" class="hidden">
+            <div class="container mx-auto px-4 py-4">
+                <ul class="text-white">
+                    <li class="mb-2"><a href="../../www_plasticsandburns_co_default.html" title="Home page">Home</a></li>
+                    <li class="mb-2"><a href="../../our-services/our-services.html" title="Our services">Our services</a></li>
+                    <li class="mb-2"><a href="../our-locations.html" title="Our locations">Our locations</a></li>
+                    <li class="mb-2"><a href="https://beansbbeans.com/our-team/our-team.html" title="Our team">Our team</a></li>
+                    <li><a href="../.https://mcrplasticsurgeryandburns.co.uk/contact-us//contact-us.html" title="Contact us">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+     </header>
+<script>
+    const mobileMenuButton = document.getElementById('mobileMenuButton');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileCloseButton = document.getElementById('mobileCloseButton');
+
+    mobileMenuButton.addEventListener('click', () => {
+        // check if it's been closed before as it will be translated down and we need to reset that
+        if (mobileNav.style.transform === 'translateY(100%)') {
+            mobileNav.style.transform = 'translateY(0)';
+            mobileNav.style.display = 'block';
+        }
+        mobileNav.classList.add('open');
+    });
+
+    mobileCloseButton.addEventListener('click', () => {
+        mobileNav.style.transform = 'translateY(100%)';
+
+        // Delay hiding the mobile navigation menu to allow the slide-down animation to play
+        setTimeout(() => {
+            mobileNav.style.display = 'none';
+        }, 300);
+    });
+</script>
+
+    <main class="container mx-auto px-4 py-8">
+        <article class="bg-white shadow-md rounded-lg p-6 shadow-md">
+            <h2 class="text-3xl font-bold mb-4">Our clinics</h2>
+            <p class="text-gray-800 mb-6">Each of our consultants with their trainees runs various dedicated specialist clinics to provide specialized care to our patients. Here are some of our key clinics:</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gray-100 text-blue-900 rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Brachial Plexus/Nerve Clinic</h3>
+                    <p class="text-gray-700 mb-4">This clinic is dedicated to patients with injuries of the main nerves to the upper limb and nerve problems such as tumors.</p>
+                </div>
+                <div class="bg-gray-100 text-blue-900 rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Burns Outreach Clinic</h3>
+                    <p class="text-gray-700 mb-4">Our award-winning Burns Outreach Team provides assessment, management, and follow-up for patients with burn injuries.</p>
+                </div>
+            </div>
+			<br />
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="bg-gray-100 text-blue-900 rounded-lg p-6 shadow-md">
+        <h3 class="text-xl font-bold mb-4">Children’s Hand Clinic</h3>
+        <p class="text-gray-700 mb-4">Our pediatric hand clinic is dedicated to treating children with congenital hand anomalies and providing follow-up care for those who have undergone surgery for traumatic hand injuries.</p>
+    </div>
+    <div class="bg-gray-100 text-blue-900 rounded-lg p-6 shadow-md">
+        <h3 class="text-xl font-bold mb-4">Cleft Lip and Palate Clinic</h3>
+        <p class="text-gray-700 mb-4">Our cleft lip and palate clinic, led by experienced surgeons, offers specialized care for patients with these conditions. We provide comprehensive treatment and work closely with a multidisciplinary team.</p>
+    </div>
+</div>
+<br />
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="bg-gray-100 text-blue-900 rounded-lg p-6 shadow-md">
+        <h3 class="text-xl font-bold mb-4">Complex Wound Clinic/Outreach</h3>
+        <p class="text-gray-700 mb-4">Our complex wound clinic, staffed by specialist nurses, manages challenging wounds using the latest wound care products and dressings. We also provide an outreach service, visiting patients in peripheral hospitals or at home.</p>
+    </div>
+    <div class="bg-gray-100 text-blue-900 rounded-lg p-6 shadow-md">
+        <h3 class="text-xl font-bold mb-4">Hand Therapy Clinic</h3>
+        <p class="text-gray-700 mb-4">Our dedicated hand therapy clinic is led by senior therapists with specialized qualifications in hand management. We offer exercises, splinting, and other therapies to optimize functional outcomes for patients before and after hand surgery.</p>
+    </div>
+</div>
+<br />
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="bg-gray-100 text-blue-900 rounded-lg p-6 shadow-md">
+        <h3 class="text-xl font-bold mb-4">Neurofibromatosis Clinic</h3>
+        <p class="text-gray-700 mb-4">Our clinic provides care for patients with neurofibromatosis, a genetic disorder leading to nerve sheath tumors. Led by experienced surgeons, we offer comprehensive treatment and collaborate with other specialists.</p>
+    </div>
+    <div class="bg-gray-100 text-blue-900 rounded-lg p-6 shadow-md">
+        <h3 class="text-xl font-bold mb-4">Oncoplastic Breast Clinic</h3>
+        <p class="text-gray-700 mb-4">Our oncoplastic breast clinic, conducted jointly with oncological breast surgeons, focuses on the treatment of breast cancer and breast reconstruction. We provide a comprehensive approach to care in collaboration with the Nightingale Centre.</p>
+    </div>
+</div>
+<br />
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="bg-gray-100 text-blue-900 rounded-lg p-6 shadow-md">
+        <h3 class="text-xl font-bold mb-4">Telemedicine Clinic</h3>
+        <p class="text-gray-700 mb-4">Our telemedicine clinic allows remote consultations, facilitating follow-up care and assessments without the need for patients to travel long distances. This efficient approach enhances accessibility and convenience for patients.</p>
+    </div>
+    <div class="bg-gray-100 text-blue-900 rounded-lg p-6 shadow-md">
+        <h3 class="text-xl font-bold mb-4">Wrist Clinic</h3>
+        <p class="text-gray-700 mb-4">Our wrist clinic, staffed by consultants with expertise in hand and wrist problems, specializes in the diagnosis and treatment of wrist pain and complex wrist injuries. We provide comprehensive care tailored to individual needs.</p>
+    </div>
+</div>
+
+            <div class="mt-8">
+    <h3 class="text-2xl font-bold mb-4">Other Specialist Clinics (Continued)</h3>
+    <ul class="list-disc pl-6 text-gray-800">
+        <li><a href="#pdc">Dressing Clinic</a></li>
+        <li><a href="#ear">Ear Clinic</a></li>
+        <li><a href="#hand">Hand Clinic</a></li>
+    </ul>
+</div>
+        </article>
+    </main>
+
+    <footer class="bg-blue-900 py-4">
+        <div class="container mx-auto px-4">
+            <p class="text-center text-white">Part of <a href="http://www.mft.nhs.uk/" class="text-blue-200 hover:text-white">Manchester University NHS Foundation Trust</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("mobileMenuButton").addEventListener("click", function () {
+                document.getElementById("mobileNav").classList.toggle("open");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

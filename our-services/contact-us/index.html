@@ -1,0 +1,334 @@
+<link rel="icon" href="https://mcrplasticsurgeryandburns.co.uk//favicon.ico">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us — Manchester Centre for Plastic Surgery & Burns</title>
+ <!-- Add Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://mcrplasticsurgeryandburns.co.uk//style.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css">
+    <style>
+        /* import font for easier reading */
+        /* something like Nunito */
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+        body {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+        }
+
+        #titleText {
+            font-family: 'Lato';
+            color: #005eb8;
+        }
+
+        /* navbar links hover */
+        #nav a:hover {
+            transition: all 0.2s ease-in-out;
+            /* white by default so dim it a bit */
+            color: #d9d9d9;
+        }
+
+        /* our services/locations divs hover cubic-bezier effect */
+
+        @media screen and (max-width: 767px) {
+            /* Example: Adjust styles for mobile devices */
+            #titleText {
+                display: none;
+            }
+
+            #logo {
+                display: none;
+            }
+
+            #nav {
+                display: none;
+            }
+
+            #mobileMenuButton {
+                display: block;
+            }
+
+            #mobileNav {
+                display: none;
+            }
+
+            /* Adjust other styles for mobile */
+        }
+
+        @media screen and (max-width: 1100px) {
+            /* Example: Adjust styles for mobile devices */
+            #titleText {
+                display: none;
+            }
+
+            #logo {
+                display: none;
+            }
+
+            #nav {
+                display: none;
+            }
+
+            #mobileMenuButton {
+                display: block;
+            }
+
+            #mobileNav {
+                display: none;
+            }
+
+            /* Adjust other styles for mobile */
+        }
+
+        /* Styles for mobile navigation menu */
+        @keyframes fadeDown {
+            0% {
+                opacity: 0;
+                transform: translateY(0%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes reveal {
+            0% {
+                opacity: 0;
+                transform: translateY(20%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        * {
+            transition: all 0.3s ease-in-out;
+        }
+
+        @media screen and (max-width: 1100px) {
+            #mobileNav {
+                display: none;
+                background-color: #005eb8;
+                padding: 1rem;
+                opacity: 0;
+                transform: translateY(20%);
+                transition: all 0.3s ease-in-out;
+            }
+
+            #mobileNav.open {
+                display: block;
+                opacity: 1;
+                transform: translateY(0);
+                animation: reveal 0.3s ease-in-out;
+            }
+
+            #mobileNav ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            #mobileNav li {
+                margin-bottom: 1rem;
+            }
+
+            #mobileNav a {
+                color: white;
+                font-size: 1.2rem;
+                text-decoration: none;
+            }
+        }
+
+         .hidden {
+            display: none;
+        }
+
+        .bg-blue-900 {
+            /* nhs blue */
+            background-color: #005eb8;
+        }
+
+        /* New Mobile Navigation Menu Styles */
+        .mobile-nav-toggle {
+            display: none;
+        }
+
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #005eb8;
+            padding: 1rem;
+            opacity: 0;
+            transform: translateY(20%);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .mobile-nav.open {
+            opacity: 1;
+            transform: translateY(0);
+            animation: reveal 0.3s ease-in-out;
+        }
+
+        .mobile-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mobile-nav li {
+            margin-bottom: 1rem;
+        }
+
+        .mobile-nav a {
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+
+
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-white">
+        <div id="thing" class="container mx-auto px-4 py-4 flex items-center">
+            <div>
+                <img src="https://mcrplasticsurgeryandburns.co.uk/cfpsb.jpg" alt="Manchester University NHS Foundation Trust" id="logo" class="h-16">
+            </div>
+            <div>
+                <h1 class="text-4xl font-bold" id="titleText">The Manchester Centre for Plastic Surgery and Burns</h1>
+            </div>
+            <button id="mobileMenuButton" class="mobile-nav-toggle text-blue-900 focus:outline-none md:hidden">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M3 5h18a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2zm0 7h18a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2zm0 7h18a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+        <nav id="nav" class="bg-blue-900">
+            <div class="container mx-auto px-4 py-4">
+                <ul class="flex justify-center text-white">
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk//">Home</a></li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk//News.html">News</a></li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk//Services.html">Our services</a></li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk//Locations.html">Our locations</a>
+                    </li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk//OurTeam.html">Our team</a></li>
+                    <li><a href="https://mcrplasticsurgeryandburns.co.uk//contact-us/">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+ <nav id="mobileNav" class="mobile-nav hidden">
+    <div class="container mx-auto px-4 py-4">
+        <button id="mobileCloseButton" class="text-white text-2xl absolute top-4 right-4 focus:outline-none">&times;</button>
+        <ul class="text-white">
+            <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk//">Home</a></li>
+            <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk//News.html">News</a></li>
+            <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk//Services.html">Our services</a></li>
+            <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk//Locations.html">Our locations</a></li>
+            <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk//OurTeam.html">Our team</a></li>
+            <li><a href="https://mcrplasticsurgeryandburns.co.uk//contact-us/">Contact us</a></li>
+        </ul>
+    </div>
+</nav>
+     </header>
+<script>
+    const mobileMenuButton = document.getElementById('mobileMenuButton');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileCloseButton = document.getElementById('mobileCloseButton');
+
+    mobileMenuButton.addEventListener('click', () => {
+        // check if it's been closed before as it will be translated down and we need to reset that
+        if (mobileNav.style.transform === 'translateY(100%)') {
+            mobileNav.style.transform = 'translateY(0)';
+            mobileNav.style.display = 'block';
+        }
+        mobileNav.classList.add('open');
+    });
+
+    mobileCloseButton.addEventListener('click', () => {
+        mobileNav.style.transform = 'translateY(100%)';
+
+        // Delay hiding the mobile navigation menu to allow the slide-down animation to play
+        setTimeout(() => {
+            mobileNav.style.display = 'none';
+        }, 300);
+    });
+</script>
+
+<main class="container mx-auto px-4 py-8">
+    <div id="content" class="content sidenav iedit">
+        <h2 class="text-3xl font-bold mb-4">Contact us</h2>
+        <p>We understand that communication is a key component of a patient’s experience. At the Manchester Centre for Plastic Surgery and Burns, we will always be honest and open. There is 24-hour surgical cover at both Wythenshawe and the Royal Manchester Children’s Hospital. Here is a list of other useful contacts.</p>
+        <h3>UHSM — Wythenshawe and Withington Community</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 mt-4">
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h4 class="text-lg font-bold">Switchboard</h4>
+                <p>0161 998 7070</p>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h4 class="text-lg font-bold">Ward F1</h4>
+                <p>0161 291 2195</p>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h4 class="text-lg font-bold">Burns Centre</h4>
+                <p>0161 291 6313</p>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h4 class="text-lg font-bold">Burns &amp; Plastics Outpatients</h4>
+                <p>0161 291 xxxx</p>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h4 class="text-lg font-bold">Hand Therapy</h4>
+                <p>0161 291 xxxx</p>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h4 class="text-lg font-bold">Secretaries</h4>
+                <p>Please see individual consultants' profiles</p>
+            </div>
+        </div>
+        <h3>RMCH — Royal Manchester Children's Hospital</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h4 class="text-lg font-bold">Switchboard</h4>
+                <p>0161 276 1234</p>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h4 class="text-lg font-bold">Ward 77</h4>
+                <p>0161 701 7700</p>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h4 class="text-lg font-bold">Burns Centre</h4>
+                <p>0161 701 8125</p>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h4 class="text-lg font-bold">Burns &amp; Plastics Aftercare Clinic</h4>
+                <p>0161 701 xxxx</p>
+            </div>
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h4 class="text-lg font-bold">Secretaries</h4>
+                <p>Please see individual consultants' profiles</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="bg-blue-900 py-4">
+    <div class="container mx-auto px-4">
+        <p class="text-center text-white">Part of <a href="http://www.mft.nhs.uk/" class="text-blue-200 hover:text-white">Manchester University NHS Foundation Trust</a></p>
+    </div>
+</footer>
+</body>
+</html>

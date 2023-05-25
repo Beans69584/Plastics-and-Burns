@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast surgery — Manchester Centre for Plastic Surgery & Burns</title>
+    <!-- Add Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+		<link href="https://mcrplasticsurgeryandburns.co.uk/favicon.ico" rel="icon" />
+	<link href="https://mcrplasticsurgeryandburns.co.uk/style.css" rel="stylesheet" />
+    <style>
+        /* import font for easier reading */
+        /* something like Nunito */
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+        body {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+        }
+
+        #titleText {
+            font-family: 'Lato';
+            color: #005eb8;
+        }
+
+        /* navbar links hover */
+        #nav a:hover {
+            transition: all 0.2s ease-in-out;
+            /* white by default so dim it a bit */
+            color: #d9d9d9;
+        }
+
+        /* our services/locations divs hover cubic-bezier effect */
+
+        @media screen and (max-width: 767px) {
+            /* Example: Adjust styles for mobile devices */
+            #titleText {
+                display: none;
+            }
+
+            #logo {
+                display: none;
+            }
+
+            #nav {
+                display: none;
+            }
+
+            #mobileMenuButton {
+                display: block;
+            }
+
+            #mobileNav {
+                display: none;
+            }
+
+            /* Adjust other styles for mobile */
+        }
+
+        @media screen and (max-width: 1100px) {
+            /* Example: Adjust styles for mobile devices */
+            #titleText {
+                display: none;
+            }
+
+            #logo {
+                display: none;
+            }
+
+            #nav {
+                display: none;
+            }
+
+            #mobileMenuButton {
+                display: block;
+            }
+
+            #mobileNav {
+                display: none;
+            }
+
+            /* Adjust other styles for mobile */
+        }
+
+        /* Styles for mobile navigation menu */
+        @keyframes fadeDown {
+            0% {
+                opacity: 0;
+                transform: translateY(0%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes reveal {
+            0% {
+                opacity: 0;
+                transform: translateY(20%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        * {
+            transition: all 0.3s ease-in-out;
+        }
+
+        @media screen and (max-width: 1100px) {
+            #mobileNav {
+                display: none;
+                background-color: #005eb8;
+                padding: 1rem;
+                opacity: 0;
+                transform: translateY(20%);
+                transition: all 0.3s ease-in-out;
+            }
+
+            #mobileNav.open {
+                display: block;
+                opacity: 1;
+                transform: translateY(0);
+                animation: reveal 0.3s ease-in-out;
+            }
+
+            #mobileNav ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            #mobileNav li {
+                margin-bottom: 1rem;
+            }
+
+            #mobileNav a {
+                color: white;
+                font-size: 1.2rem;
+                text-decoration: none;
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .bg-blue-900 {
+            /* nhs blue */
+            background-color: #005eb8;
+        }
+
+        /* New Mobile Navigation Menu Styles */
+        .mobile-nav-toggle {
+            display: none;
+        }
+
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #005eb8;
+            padding: 1rem;
+            opacity: 0;
+            transform: translateY(20%);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .mobile-nav.open {
+            opacity: 1;
+            transform: translateY(0);
+            animation: reveal 0.3s ease-in-out;
+        }
+
+        .mobile-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mobile-nav li {
+            margin-bottom: 1rem;
+        }
+
+        .mobile-nav a {
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-white">
+        <div id="thing" class="container mx-auto px-4 py-4 flex items-center">
+            <div>
+                <img src="https://mcrplasticsurgeryandburns.co.uk/cfpsb.jpg" alt="Manchester University NHS Foundation Trust" id="logo" class="h-16">
+            </div>
+            <div>
+                <h1 class="text-4xl font-bold" id="titleText">The Manchester Centre for Plastic Surgery and Burns</h1>
+            </div>
+            <button id="mobileMenuButton" class="mobile-nav-toggle text-blue-900 focus:outline-none md:hidden">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M3 5h18a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2zm0 7h18a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2zm0 7h18a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+        <nav id="nav" class="bg-blue-900">
+            <div class="container mx-auto px-4 py-4">
+                <ul class="flex justify-center text-white">
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/">Home</a></li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/News.html">News</a></li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/Services.html">Our services</a></li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/Locations.html">Our locations</a>
+                    </li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/OurTeam.html">Our team</a></li>
+                    <li><a href="https://mcrplasticsurgeryandburns.co.uk/contact-us/">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="mobileNav" class="mobile-nav hidden">
+            <div class="container mx-auto px-4 py-4">
+                <button id="mobileCloseButton" class="text-white text-2xl absolute top-4 right-4 focus:outline-none">&times;</button>
+                <ul class="text-white">
+                    <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/">Home</a></li>
+                    <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/News.html">News</a></li>
+                    <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/Services.html">Our services</a></li>
+                    <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/Locations.html">Our locations</a></li>
+                    <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/OurTeam.html">Our team</a></li>
+                    <li><a href="https://mcrplasticsurgeryandburns.co.uk/contact-us/">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <style>
+    /* Styling for the lists */
+    .thing ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .thing ul li {
+        position: relative;
+        padding-left: 1.5rem;
+        margin-bottom: 0.75rem;
+        line-height: 1.5;
+    }
+
+    .thing ul li:before {
+        content: "";
+        position: absolute;
+        left: 0.5rem; /* Adjust the left value as needed */
+        top: 0.75rem; /* Adjust the top value as needed */
+        transform: translate(-50%, -50%);
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: #005eb8; /* Adjust the color as needed */
+        border-radius: 50%;
+    }
+
+	#mobileNav {
+		z-index: 1000;
+	}
+	</style>
+    <main class="container mx-auto px-4 py-8">
+        <article class="bg-white shadow-md rounded-lg p-6">
+            <h2 class="text-3xl font-bold mb-4">Breast surgery</h2>
+            <p class="text-gray-900 mb-6">Our reconstructive breast surgery team offers a full, contemporary range of options for reconstruction following mastectomy and associated ‘symmetrising’ and ‘sculpting’ techniques. We also provide treatment for developmental breast pathology such as asymmetry, tuberous breast deformity, hypomastia, and breast hyperplasia. Please note that patients referred for some breast modification surgery may need to have specific funding in place from the CCG.</p>
+			<div class="bg-gray-100 p-4 mb-6 rounded-lg thing">
+            <h3 class="text-xl font-bold mb-4">Breast Reconstruction</h3>
+            <ul class="rounded-lg p-4">
+                <li>Free DIEP or muscle sparing TRAM flaps</li>
+                <li>TUG or gluteal free flaps</li>
+                <li>Pedicled latissimus dorsi flaps – autologous or with implant</li>
+                <li>Tissue expansion and implants</li>
+                <li>Oncoplastic dermal flap and implant reconstruction</li>
+                <li>Reconstruction with artificial dermal matrix and implant</li>
+                <li>Partial breast reconstruction with local perforator flaps (LICAP, TDAP)</li>
+            </ul>
+			</div>
+			<div class="bg-gray-100 p-4 mb-6 rounded-lg thing">
+            <h3 class="text-xl font-bold mb-4">Breast Modification</h3>
+            <ul class="rounded-lg p-4">
+                <li>Implant-based breast augmentation</li>
+                <li>Breast reduction</li>
+                <li>Mastopexy</li>
+            </ul>
+			</div>
+			<div class="bg-gray-100 p-4 mb-6 rounded-lg thing">
+            <h3 class="text-xl font-bold mb-4">Post Reconstruction Finesse</h3>
+            <ul class="rounded-lg p-4">
+                <li>Lipomodelling</li>
+                <li>Nipple reconstruction</li>
+            </ul>
+			</div>
+			<div class="bg-gray-100 p-4 mb-6 rounded-lg thing">
+				<h3 class="text-xl font-bold mb-4">Breast Symmetrising</h3>
+            <ul class="rounded-lg p-4">
+            <li>Gynaecomastia Correction</li>
+			</ul>
+            </div>
+        </article>
+    </main>
+    <footer class="bg-blue-900 py-4">
+        <div class="container mx-auto px-4">
+            <p class="text-center text-white">Part of <a href="http://www.mft.nhs.uk/" class="text-blue-200 hover:text-white">Manchester University NHS Foundation Trust</a></p>
+        </div>
+    </footer>
+    <script>
+        const mobileMenuButton = document.getElementById('mobileMenuButton');
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileCloseButton = document.getElementById('mobileCloseButton');
+
+        mobileMenuButton.addEventListener('click', () => {
+            // check if it's been closed before as it will be translated down and we need to reset that
+            if (mobileNav.style.transform === 'translateY(100%)') {
+                mobileNav.style.transform = 'translateY(0)';
+                mobileNav.style.display = 'block';
+            }
+            mobileNav.classList.add('open');
+        });
+
+        mobileCloseButton.addEventListener('click', () => {
+            mobileNav.style.transform = 'translateY(100%)';
+
+            // Delay hiding the mobile navigation menu to allow the slide-down animation to play
+            setTimeout(() => {
+                mobileNav.style.display = 'none';
+            }, 300);
+        });
+    </script>
+</body>
+
+</html>

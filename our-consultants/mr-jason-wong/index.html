@@ -1,0 +1,118 @@
+    <link rel="icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" type="image/png" sizes="96x96">
+    <link rel="icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" sizes="180x180">
+    <link rel="mask-icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" color="#005eb8">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Jason Wong MBChB FHEA PhD FRCS(Plast) — Manchester Centre for Plastic Surgery & Burns</title>
+    <!-- Add Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://mcrplasticsurgeryandburns.co.uk/style.css">
+    <style>
+        #titleText {
+            font-family: 'Lato';
+            color: #005eb8;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-white">
+        <div class="container mx-auto px-4 py-4 flex items-center">
+            <div>
+                <img src="https://mcrplasticsurgeryandburns.co.uk/mft.png" alt="Manchester University NHS Foundation Trust" id="logo" class="h-16">
+            </div>
+            <div>
+                <h1 class="text-4xl font-bold" id="titleText">The Manchester Centre for Plastic Surgery and Burns</h1>
+            </div>
+        </div>
+        <nav class="bg-blue-900">
+            <div class="container mx-auto px-4 py-4">
+                <ul class="flex justify-center text-white">
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/">Home</a></li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/Services.html">Our services</a></li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/Locations.html">Our locations</a></li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/OurTeam.html">Our team</a></li>
+                    <li><a href="https://mcrplasticsurgeryandburns.co.uk/ContactUs.html/">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+     </header>
+<script>
+    const mobileMenuButton = document.getElementById('mobileMenuButton');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileCloseButton = document.getElementById('mobileCloseButton');
+
+    mobileMenuButton.addEventListener('click', () => {
+        // check if it's been closed before as it will be translated down and we need to reset that
+        if (mobileNav.style.transform === 'translateY(100%)') {
+            mobileNav.style.transform = 'translateY(0)';
+            mobileNav.style.display = 'block';
+        }
+        mobileNav.classList.add('open');
+    });
+
+    mobileCloseButton.addEventListener('click', () => {
+        mobileNav.style.transform = 'translateY(100%)';
+
+        // Delay hiding the mobile navigation menu to allow the slide-down animation to play
+        setTimeout(() => {
+            mobileNav.style.display = 'none';
+        }, 300);
+    });
+</script>
+
+    <main class="container mx-auto px-4 py-8">
+        <article class="bg-white shadow-md rounded-lg p-6 shadow-md">
+            <h2 class="text-3xl font-bold mb-4">Mr Jason Wong MBChB FHEA PhD FRCS(Plast)</h2>
+            <p class="text-gray-800 mb-6 "><img src="https://mcrplasticsurgeryandburns.co.uk/data/uploads/mugshots/jw.jpg" alt="" class="w-56 shadow-md rounded-lg h-auto"></p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gray-100 text-blue-900 rounded-lg p-6 shadow-md shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Biography</h3>
+                    <p class="text-gray-700 mb-4">Mr Wong is one of our New Academic Consultant Plastic Surgeons, received his training through the Academic training programme in Manchester and was the first "Walport NIHR" Clinical Lecturer In Plastic Surgery. His primary interest is in managing trauma ranging from simple to complex with particular expertise in tendon problems, complex wounds and reconstructive microsurgery. He was one of a handful of International candidates to receive training in the famous "Chang Gung Memorial Hospital" in Taiwan. Mr Wong has an Honorary Senior Lecturer position at the University of Manchester with research that focuses on understanding the process of fibrosis and tissue formation strategies. He teaches and supervises numerous students on the Masters and Postdoctoral Programme at the University and has international collaborations in France, Germany, Taiwan, and the USA. He has an extensive research portfolio, which has been funded in the past by the Academy of Medical Sciences, Wellcome Trust, Royal College of Surgeons of Edinburgh, Federation of Societies for Surgery of the Hand (FESSH), and most recently the Medical Research Council (MRC).</p>
+                </div>
+                <div class="bg-gray-100 text-blue-900 rounded-lg p-6 shadow-md shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Special Interests</h3>
+                    <ul class="list-disc list-inside text-gray-700 mb-4">
+                        <li>Upper Limb and Lower Limb Trauma</li>
+                        <li>Scar Management</li>
+                        <li>Common Hand Conditions (Fibrosis, Tendons, and Nerves)</li>
+                        <li>Complex Wounds (including Reconstructive Microsurgery)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <h3 class="text-2xl font-bold mb-4">Clinic times & locations</h3>
+                <div class="bg-gray-100 text-blue-900 rounded-lg p-6 shadow-md shadow-md">
+                    <ul class="list-disc list-inside text-gray-700">
+                        <p><strong>UHSM (Wythenshawe Hospital):</strong> Friday mornings</p>
+                    </ul>
+                </div>
+            </div>
+                                <div class="mt-8">
+            <h3 class="text-2xl font-bold mb-4"><a href="https://mcrplasticsurgeryandburns.co.uk/our-consultants/mr-james-bedford/">Contact Details</a></h3>
+            <div class="bg-gray-100 text-blue-900 rounded-lg p-6 shadow-md shadow-md">
+                <ul>
+	<li>TBC</li>
+                    </ul>
+        </article>
+    </main>
+
+    <footer class="bg-blue-900 py-4">
+        <div class="container mx-auto px-4">
+            <p class="text-center text-white">Part of <a href="http://www.mft.nhs.uk/" class="text-blue-200 hover:text-white">Manchester University NHS Foundation Trust</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

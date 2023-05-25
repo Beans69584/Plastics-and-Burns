@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice &mdash; Generated 23 May 2023</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1f1f1f 0%, #282828 100%);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color: #e1e1e1;
+            margin: 0;
+            padding: 50px 0;
+        }
+
+        .invoice-box {
+            max-width: 800px;
+            margin: auto;
+            padding: 30px;
+            box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+            background-color: #282828;
+            border-radius: 8px;
+
+        }
+
+        .invoice-header {
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .invoice-header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .invoice-details {
+            margin: 20px 0;
+            padding: 20px;
+            background: #383838;
+            border-radius: 8px;
+        }
+
+        .invoice-details p {
+            margin: 0;
+            color: #cccccc;
+            line-height: 1.6;
+        }
+
+        .invoice-details strong {
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+
+        }
+
+        .table thead th {
+            padding: 10px 0;
+            font-weight: 700;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .table tbody td {
+            padding: 10px 0;
+            color: #cccccc;
+            text-align: left;
+        }
+
+
+        .table .total {
+            font-weight: 700;
+            color: #ffffff;
+
+        }
+
+        .text-right {
+            text-align: right;
+
+        }
+
+        a {
+            color: #1abc9c;
+            text-decoration: none;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="invoice-box">
+        <div class="invoice-header">
+            <h1>Invoice</h1>
+        </div>
+
+        <div class="invoice-details">
+            <p><strong>Created:</strong> May 23, 2023</p>
+            <p><strong>Due:</strong> June 22, 2023</p>
+            <p><strong>From:</strong> Jacob Walton</p>
+            <p><strong>Email:</strong> <a href="mailto:jacobdw183@gmail.com">jacobdw183@gmail.com</a></p>
+            <p><strong>Address:</strong> 23 Wood Vale, Westhoughton, BL5 3FF</p>
+            <p><strong>To:</strong> The Manchester Centre for Plastic Surgery and Burns</p>
+            <p><strong>Description:</strong> Web Development Services</p>
+            <p><strong>Total Hours:</strong> 35</p>
+            <p><strong>Hourly Rate:</strong> &pound;20</p>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th class="text-right">Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Website Conversion</td>
+                    <td class="text-right">&pound;500</td>
+                </tr>
+                <tr>
+                    <td>Data Update</td>
+                    <td class="text-right">&pound;100</td>
+                </tr>
+                <tr>
+                    <td>WordPress Blog Integration</td>
+                    <td class="text-right">&pound;40</td>
+                </tr>
+                <tr>
+                    <td>Project Management, Testing, & Revisions</td>
+                    <td class="text-right">&pound;160</td>
+                </tr>
+                <tr class="total">
+                    <td>Total</td>
+                    <td class="text-right">&pound;800</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

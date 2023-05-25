@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="og:title" content="News — Manchester Centre for Plastic Surgery & Burns">
+    <meta name="og:description" content="The Manchester Centre for Plastic Surgery and Burns provides specialist care to the population of Greater Manchester and is the major tertiary referral centre for complex reconstruction in the North West of England.">
+    <meta name="og:image" content="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png">
+    <meta name="description" content="The Manchester Centre for Plastic Surgery and Burns provides specialist care to the population of Greater Manchester and is the major tertiary referral centre for complex reconstruction in the North West of England.">
+    <meta name="keywords" content="Manchester Centre for Plastic Surgery, Burns, specialist care, reconstruction, Greater Manchester, North West of England">
+    <meta name="author" content="Manchester University NHS Foundation Trust">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#005eb8">
+    <meta name="msapplication-navbutton-color" content="#005eb8">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#005eb8">
+    <meta name="msapplication-TileColor" content="#005eb8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Page</title>
+      <link rel="icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" type="image/png" sizes="96x96">
+    <link rel="icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" sizes="180x180">
+    <link rel="mask-icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" color="#005eb8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <style>
+    img {
+        max-height: 400px;
+    }
+
+    .heightSmoothing {
+        transition: all 1s ease-in-out;
+    }
+        .post-meta {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+
+    .post-tags {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+  </style>
+      <link rel="stylesheet" type="text/css" href="https://mcrplasticsurgeryandburns.co.uk/style.css"/>
+	    <!-- Add Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <style>
+        /* import font for easier reading */
+        /* something like Nunito */
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+        body {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+        }
+
+        #titleText {
+            font-family: 'Lato';
+            color: #005eb8;
+        }
+
+        /* navbar links hover */
+        #nav a:hover {
+            transition: all 0.2s ease-in-out;
+            /* white by default so dim it a bit */
+            color: #d9d9d9;
+        }
+
+        /* our services/locations divs hover cubic-bezier effect */
+
+        @media screen and (max-width: 767px) {
+            /* Example: Adjust styles for mobile devices */
+            #titleText {
+                display: none;
+            }
+
+            #logo {
+                display: none;
+            }
+
+            #nav {
+                display: none;
+            }
+
+            #mobileMenuButton {
+                display: block;
+            }
+
+            #mobileNav {
+                display: none;
+            }
+
+            /* Adjust other styles for mobile */
+        }
+
+        @media screen and (max-width: 1100px) {
+            /* Example: Adjust styles for mobile devices */
+            #titleText {
+                display: none;
+            }
+
+            #logo {
+                display: none;
+            }
+
+            #nav {
+                display: none;
+            }
+
+            #mobileMenuButton {
+                display: block;
+            }
+
+            #mobileNav {
+                display: none;
+            }
+
+            /* Adjust other styles for mobile */
+        }
+
+        /* Styles for mobile navigation menu */
+        @keyframes fadeDown {
+            0% {
+                opacity: 0;
+                transform: translateY(0%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes reveal {
+            0% {
+                opacity: 0;
+                transform: translateY(20%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        * {
+            transition: all 0.3s ease-in-out;
+        }
+
+        @media screen and (max-width: 1100px) {
+            #mobileNav {
+                display: none;
+                background-color: #005eb8;
+                padding: 1rem;
+                opacity: 0;
+                transform: translateY(20%);
+                transition: all 0.3s ease-in-out;
+            }
+
+            #mobileNav.open {
+                display: block;
+                opacity: 1;
+                transform: translateY(0);
+                animation: reveal 0.3s ease-in-out;
+            }
+
+            #mobileNav ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            #mobileNav li {
+                margin-bottom: 1rem;
+            }
+
+            #mobileNav a {
+                color: white;
+                font-size: 1.2rem;
+                text-decoration: none;
+            }
+        }
+
+         .hidden {
+            display: none;
+        }
+
+        .bg-blue-900 {
+            /* nhs blue */
+            background-color: #005eb8;
+        }
+
+        /* New Mobile Navigation Menu Styles */
+        .mobile-nav-toggle {
+            display: none;
+        }
+
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #005eb8;
+            padding: 1rem;
+            opacity: 0;
+            transform: translateY(20%);
+            transition: all 0.3s ease-in-out;
+            z-index: 1000;
+        }
+
+        .mobile-nav.open {
+            opacity: 1;
+            transform: translateY(0);
+            animation: reveal 0.3s ease-in-out;
+        }
+
+        .mobile-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mobile-nav li {
+            margin-bottom: 1rem;
+        }
+
+        .mobile-nav a {
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+
+        #load-more-button {
+            transition: all 0.3s ease-in-out;
+        }
+
+        #load-more-container {
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-white">
+        <div id="thing" class="container mx-auto px-4 py-4 flex items-center">
+            <div>
+                <img src="https://mcrplasticsurgeryandburns.co.uk/cfpsb.jpg" alt="Manchester University NHS Foundation Trust" id="logo" class="h-16">
+            </div>
+            <div>
+                <h1 class="text-4xl font-bold" id="titleText">The Manchester Centre for Plastic Surgery and Burns</h1>
+            </div>
+            <button id="mobileMenuButton" class="mobile-nav-toggle text-blue-900 focus:outline-none md:hidden">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M3 5h18a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2zm0 7h18a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2zm0 7h18a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+        <nav id="nav" class="bg-blue-900">
+            <div class="container mx-auto px-4 py-4">
+                <ul class="flex justify-center text-white">
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/">Home</a></li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/News.html">News</a></li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/Services.html">Our services</a></li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/Locations.html">Our locations</a>
+                    </li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/OurTeam.html">Our team</a></li>
+                    <li><a href="https://mcrplasticsurgeryandburns.co.uk/contact-us/">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+ <nav id="mobileNav" class="mobile-nav hidden">
+    <div class="container mx-auto px-4 py-4">
+        <button id="mobileCloseButton" class="text-white text-2xl absolute top-4 right-4 focus:outline-none">&times;</button>
+        <ul class="text-white">
+            <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/">Home</a></li>
+            <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/News.html">News</a></li>
+            <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/Services.html">Our services</a></li>
+            <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/Locations.html">Our locations</a></li>
+            <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/OurTeam.html">Our team</a></li>
+            <li><a href="https://mcrplasticsurgeryandburns.co.uk/contact-us/">Contact us</a></li>
+        </ul>
+    </div>
+</nav>
+     </header>
+<script>
+    const mobileMenuButton = document.getElementById('mobileMenuButton');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileCloseButton = document.getElementById('mobileCloseButton');
+
+    mobileMenuButton.addEventListener('click', () => {
+        // check if it's been closed before as it will be translated down and we need to reset that
+        if (mobileNav.style.transform === 'translateY(100%)') {
+            mobileNav.style.transform = 'translateY(0)';
+            mobileNav.style.display = 'block';
+        }
+        mobileNav.classList.add('open');
+    });
+
+    mobileCloseButton.addEventListener('click', () => {
+        mobileNav.style.transform = 'translateY(100%)';
+
+        // Delay hiding the mobile navigation menu to allow the slide-down animation to play
+        setTimeout(() => {
+            mobileNav.style.display = 'none';
+        }, 300);
+    });
+</script>
+  <main class="container mx-auto px-4 py-8">
+    <article class="bg-white shadow-md rounded-lg p-6 heightSmoothing">
+      <h2 class="text-3xl font-bold mb-4">News page</h2>
+      <p class="text-gray-800 mb-6">Stay up to date with the latest news from the Manchester Centre for Plastic Surgery and Burns.</p>
+
+      <div id="latest-posts"></div>
+      <div id="load-more-container" class="text-center">
+        <button id="load-more-button" class="inline-block px-6 py-3 bg-blue-700 text-white font-bold rounded-lg hover:bg-blue-600 transition duration-300 mt-2">Load More</button>
+      </div>
+    </article>
+  </main>
+
+  <footer class="bg-blue-900 py-4">
+    <div class="container mx-auto px-4">
+      <p class="text-center text-white">Part of <a href="http://www.mft.nhs.uk/" class="text-blue-200 hover:text-white">Manchester University NHS Foundation Trust</a></p>
+    </div>
+  </footer>
+  <style>
+    .post-date {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 0.5rem;
+        margin-top: 0;
+    }
+  </style>
+  <script>
+    var postsData = [];
+    var startIndex = 0;
+    var numPostsToLoad = 10;
+    var loadMoreButton = document.getElementById('load-more-button');
+    var latestPostsContainer = document.getElementById('latest-posts');
+
+    function fetchPosts() {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'https://plasticsmockup.co.uk/wp-json/wp/v2/posts?per_page=' + numPostsToLoad + '&offset=' + startIndex, true);
+      xhr.onload = function() {
+        if (xhr.status >= 200 && xhr.status < 400) {
+          var fetchedPostsData = JSON.parse(xhr.responseText);
+
+          if (fetchedPostsData.length === 0) {
+            loadMoreButton.style.display = 'none';
+            return;
+          }
+
+          console.log(fetchedPostsData.length + ' posts loaded');
+          // if that length = the amount of posts returned, hide the load more button
+            if (fetchedPostsData.length < numPostsToLoad) {
+                loadMoreButton.style.display = 'none';
+            }
+            // get date of post 
+            var date = new Date(fetchedPostsData[0].date);
+            var day = date.getDate();
+            var month = date.getMonth() + 1;
+            var year = date.getFullYear();
+            var dateString = day + '/' + month + '/' + year;
+          fetchedPostsData.forEach(function(post, index) {
+            postsData.push(post);
+            renderPost(post, index + startIndex, dateString);
+          });
+
+          startIndex += fetchedPostsData.length;
+        } else {
+          console.log('Error loading posts');
+        }
+      };
+      xhr.send();
+    }
+
+    function renderPost(post, index, dateString) {
+      var postEntry = document.createElement('div');
+      postEntry.className = 'bg-gray-100 p-4 rounded-lg mb-4 animate__animated animate__fadeInUp post-entry shadow-md';
+      postEntry.style.animationDelay = (index * 0.2) + 's';
+        console.log(post);
+        console.log(post.date);
+        var actualDate = new Date(post.date);
+        console.log(actualDate);
+      var title = post.title.rendered;
+      var titleWithDate = title + `<p class="post-date">${actualDate.getDate()}/${(actualDate.getMonth() + 1)}/${actualDate.getFullYear()}</p>`;
+      var content = post.content.rendered;
+      var featuredMediaId = post.featured_media;
+
+      // Fetch the featured media data
+      var xhrMedia = new XMLHttpRequest();
+      xhrMedia.open('GET', 'https://plasticsmockup.co.uk/wp-json/wp/v2/media/' + featuredMediaId, true);
+      xhrMedia.onload = function() {
+        if (xhrMedia.status >= 200 && xhrMedia.status < 400) {
+          var mediaData = JSON.parse(xhrMedia.responseText);
+          var imageUrl = mediaData.source_url;
+
+          var image = document.createElement('img');
+          image.src = imageUrl;
+          image.style.maxHeight = '300px';
+          image.style.width = 'auto';
+          image.style.marginTop = '20px';
+          image.style.borderRadius = '10px';
+          image.style.transition = 'all 0.3s ease-in-out';
+          image.onmouseover = function() {
+            image.style.transform = 'scale(1.02)';
+            image.style.cursor = 'pointer';
+          };
+          image.onmouseout = function() {
+            image.style.transform = 'scale(1)';
+          };
+          image.onclick = function() {
+            window.location.href = 'post.php?id=' + post.id;
+          };
+
+          postEntry.appendChild(image);
+        } else {
+          console.log('Error loading media');
+        }
+      };
+      xhrMedia.send();
+
+      var titleElement = document.createElement('h3');
+      titleElement.className = 'text-xl font-bold mb-0';
+      titleElement.innerHTML = titleWithDate;
+      postEntry.appendChild(titleElement);
+
+      content = content.replace(/<img[^>]*>/g, "");
+      var firstParagraph = content.match(/<p>(.*?)<\/p>/)[0];
+      firstParagraph = firstParagraph.replace(/<\/?p[^>]*>/g, "");
+      // check if it's longer than 200 characters
+        if (firstParagraph.length > 200) {
+            firstParagraph = firstParagraph.substring(0, 200) + '...';
+        }
+      content = firstParagraph;
+      var contentElement = document.createElement('p');
+      contentElement.className = 'text-gray-800 mb-4';
+      contentElement.innerHTML = content;
+      postEntry.appendChild(contentElement);
+
+      var readMoreButton = document.createElement('a');
+      readMoreButton.href = 'post.php?id=' + post.id;
+      readMoreButton.className = 'inline-block px-6 py-3 bg-blue-700 text-white font-bold rounded-lg hover:bg-blue-600 transition duration-300 mt-2';
+      readMoreButton.innerHTML = 'Read More';
+      postEntry.appendChild(readMoreButton);
+
+      latestPostsContainer.appendChild(postEntry);
+
+      // hide load more button if there are no more posts to load
+      setTimeout(function() {
+        postEntry.style.height = 'auto';
+      }, 10);
+    }
+
+    function loadMorePosts() {
+      fetchPosts();
+    }
+
+    loadMoreButton.addEventListener('click', loadMorePosts);
+
+    fetchPosts();
+  </script>
+
+
+</body>
+</html>

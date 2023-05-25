@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconstruction after gynaecological / colorectal / hydradenitis / pilonidal disease surgery — Manchester Centre for Plastic Surgery & Burns</title>
+        <link rel="icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" type="image/png" sizes="96x96">
+    <link rel="icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" sizes="180x180">
+    <link rel="mask-icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" color="#005eb8">
+    <!-- Add Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+		<link href="https://mcrplasticsurgeryandburns.co.uk/favicon.ico" rel="icon" />
+	<link href="https://mcrplasticsurgeryandburns.co.uk/style.css" rel="stylesheet" />
+    <style>
+        /* import font for easier reading */
+        /* something like Nunito */
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+        body {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+        }
+
+        #titleText {
+            font-family: 'Lato';
+            color: #005eb8;
+        }
+
+        /* navbar links hover */
+        #nav a:hover {
+            transition: all 0.2s ease-in-out;
+            /* white by default so dim it a bit */
+            color: #d9d9d9;
+        }
+
+        /* our services/locations divs hover cubic-bezier effect */
+
+        @media screen and (max-width: 767px) {
+            /* Example: Adjust styles for mobile devices */
+            #titleText {
+                display: none;
+            }
+
+            #logo {
+                display: none;
+            }
+
+            #nav {
+                display: none;
+            }
+
+            #mobileMenuButton {
+                display: block;
+            }
+
+            #mobileNav {
+                display: none;
+            }
+
+            /* Adjust other styles for mobile */
+        }
+
+        @media screen and (max-width: 1100px) {
+            /* Example: Adjust styles for mobile devices */
+            #titleText {
+                display: none;
+            }
+
+            #logo {
+                display: none;
+            }
+
+            #nav {
+                display: none;
+            }
+
+            #mobileMenuButton {
+                display: block;
+            }
+
+            #mobileNav {
+                display: none;
+            }
+
+            /* Adjust other styles for mobile */
+        }
+
+        /* Styles for mobile navigation menu */
+        @keyframes fadeDown {
+            0% {
+                opacity: 0;
+                transform: translateY(0%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes reveal {
+            0% {
+                opacity: 0;
+                transform: translateY(20%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        * {
+            transition: all 0.3s ease-in-out;
+        }
+
+        @media screen and (max-width: 1100px) {
+            #mobileNav {
+                display: none;
+                background-color: #005eb8;
+                padding: 1rem;
+                opacity: 0;
+                transform: translateY(20%);
+                transition: all 0.3s ease-in-out;
+            }
+
+            #mobileNav.open {
+                display: block;
+                opacity: 1;
+                transform: translateY(0);
+                animation: reveal 0.3s ease-in-out;
+            }
+
+            #mobileNav ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            #mobileNav li {
+                margin-bottom: 1rem;
+            }
+
+            #mobileNav a {
+                color: white;
+                font-size: 1.2rem;
+                text-decoration: none;
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .bg-blue-900 {
+            /* nhs blue */
+            background-color: #005eb8;
+        }
+
+        /* New Mobile Navigation Menu Styles */
+        .mobile-nav-toggle {
+            display: none;
+        }
+
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #005eb8;
+            padding: 1rem;
+            opacity: 0;
+            transform: translateY(20%);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .mobile-nav.open {
+            opacity: 1;
+            transform: translateY(0);
+            animation: reveal 0.3s ease-in-out;
+        }
+
+        .mobile-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mobile-nav li {
+            margin-bottom: 1rem;
+        }
+
+        .mobile-nav a {
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+        #mobileNav {
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-white">
+        <div id="thing" class="container mx-auto px-4 py-4 flex items-center">
+            <div>
+                <img src="https://mcrplasticsurgeryandburns.co.uk/cfpsb.jpg" alt="Manchester University NHS Foundation Trust" id="logo" class="h-16">
+            </div>
+            <div>
+                <h1 class="text-4xl font-bold" id="titleText">The Manchester Centre for Plastic Surgery and Burns</h1>
+            </div>
+            <button id="mobileMenuButton" class="mobile-nav-toggle text-blue-900 focus:outline-none md:hidden">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M3 5h18a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2zm0 7h18a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2zm0 7h18a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+        <nav id="nav" class="bg-blue-900">
+            <div class="container mx-auto px-4 py-4">
+                <ul class="flex justify-center text-white">
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/">Home</a></li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/News.html">News</a></li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/Services.html">Our services</a></li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/Locations.html">Our locations</a>
+                    </li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/OurTeam.html">Our team</a></li>
+                    <li><a href="https://mcrplasticsurgeryandburns.co.uk/contact-us/">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="mobileNav" class="mobile-nav hidden">
+            <div class="container mx-auto px-4 py-4">
+                <button id="mobileCloseButton" class="text-white text-2xl absolute top-4 right-4 focus:outline-none">&times;</button>
+                <ul class="text-white">
+                    <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/">Home</a></li>
+                    <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/News.html">News</a></li>
+                    <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/Services.html">Our services</a></li>
+                    <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/Locations.html">Our locations</a></li>
+                    <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/OurTeam.html">Our team</a></li>
+                    <li><a href="https://mcrplasticsurgeryandburns.co.uk/contact-us/">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+	<style>
+		    .thing ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .thing ul li {
+        position: relative;
+        padding-left: 1.5rem;
+        margin-bottom: 0.75rem;
+        line-height: 1.5;
+    }
+
+    .thing ul li:before {
+        content: "";
+        position: absolute;
+        left: 0.5rem; /* Adjust the left value as needed */
+        top: 0.75rem; /* Adjust the top value as needed */
+        transform: translate(-50%, -50%);
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: #005eb8; /* Adjust the color as needed */
+        border-radius: 50%;
+    }
+
+	</style>
+    <main class="container mx-auto px-4 py-8">
+        <article class="bg-white shadow-md rounded-lg p-6">
+            <h2 class="text-3xl font-bold mb-4">Reconstruction after gynaecological / colorectal / hydradenitis / pilonidal disease surgery</h2>
+            <p class="text-gray-900 mb-6">Excision of gynaecological or low rectal cancers may require removal of significant tissue within the perineum or walls of the involved structures. As Reconstructive surgeons, we are often called by our colleagues to reconstruct such defects. Hydradenitis and pilonidal disease are benign but often relentless inflammatory/septic conditions of the perineal/gluteal cleft area as well as other areas of sweat gland-bearing which often require radical debridement. Amongst our armamentarium are:</p>
+			<div class="bg-gray-100 p-4 mb-6 rounded-lg thing">
+            <h3 class="text-xl font-bold mb-4">Reconstruction Techniques</h3>
+            <ul class="rounded-lg p-4">
+                <li>Laying open of sepsis and healing by secondary intention</li>
+                <li>Excision and split skin grafting</li>
+                <li>Local flaps based on the external pudendal system (Lotus petal flaps)</li>
+                <li>Gracilis myocutaneous flaps</li>
+                <li>Gluteal myocutaneous flaps</li>
+                <li>Lumbosacral or gluteal fasciocutaneous perforator flaps</li>
+                <li>Vertical rectus abdominis flaps passed through the open pelvis</li>
+            </ul>
+			</div>
+        </article>
+    </main>
+    <footer class="bg-blue-900 py-4">
+        <div class="container mx-auto px-4">
+            <p class="text-center text-white">Part of <a href="http://www.mft.nhs.uk/" class="text-blue-200 hover:text-white">Manchester University NHS Foundation Trust</a></p>
+        </div>
+    </footer>
+    <script>
+        const mobileMenuButton = document.getElementById('mobileMenuButton');
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileCloseButton = document.getElementById('mobileCloseButton');
+
+        mobileMenuButton.addEventListener('click', () => {
+            // check if it's been closed before as it will be translated down and we need to reset that
+            if (mobileNav.style.transform === 'translateY(100%)') {
+                mobileNav.style.transform = 'translateY(0)';
+                mobileNav.style.display = 'block';
+            }
+            mobileNav.classList.add('open');
+        });
+
+        mobileCloseButton.addEventListener('click', () => {
+            mobileNav.style.transform = 'translateY(100%)';
+
+            // Delay hiding the mobile navigation menu to allow the slide-down animation to play
+            setTimeout(() => {
+                mobileNav.style.display = 'none';
+            }, 300);
+        });
+    </script>
+</body>
+
+</html>

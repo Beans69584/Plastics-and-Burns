@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allied professionals — Manchester Centre for Plastic Surgery & Burns</title>
+    <!-- Add Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://mcrplasticsurgeryandburns.co.uk/style.css" />
+    <style>
+        /* import font for easier reading */
+        /* something like Nunito */
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+        body {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+        }
+
+        #titleText {
+            font-family: 'Lato';
+            color: #005eb8;
+        }
+
+        /* navbar links hover */
+        #nav a:hover {
+            transition: all 0.2s ease-in-out;
+            /* white by default so dim it a bit */
+            color: #d9d9d9;
+        }
+
+        /* our services/locations divs hover cubic-bezier effect */
+
+        @media screen and (max-width: 767px) {
+            /* Example: Adjust styles for mobile devices */
+            #titleText {
+                display: none;
+            }
+
+            #logo {
+                display: none;
+            }
+
+            #nav {
+                display: none;
+            }
+
+            #mobileMenuButton {
+                display: block;
+            }
+
+            #mobileNav {
+                display: none;
+            }
+
+            /* Adjust other styles for mobile */
+        }
+
+        @media screen and (max-width: 1100px) {
+            /* Example: Adjust styles for mobile devices */
+            #titleText {
+                display: none;
+            }
+
+            #logo {
+                display: none;
+            }
+
+            #nav {
+                display: none;
+            }
+
+            #mobileMenuButton {
+                display: block;
+            }
+
+            #mobileNav {
+                display: none;
+            }
+
+            /* Adjust other styles for mobile */
+        }
+
+        /* Styles for mobile navigation menu */
+        @keyframes fadeDown {
+            0% {
+                opacity: 0;
+                transform: translateY(0%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes reveal {
+            0% {
+                opacity: 0;
+                transform: translateY(20%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        * {
+            transition: all 0.3s ease-in-out;
+        }
+
+        aside {
+            /* top left, bottom left border radius */
+            border-radius: 0.5rem 0 0 0.5rem;
+        }
+
+        #content {
+            /* top right, bottom right border radius */
+            border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+        }
+
+        @media screen and (max-width: 1100px) {
+            aside {
+                display: none;
+            }
+
+            #content {
+                border-radius: 0.5rem;
+            }
+
+            #mobileNav {
+                display: none;
+                background-color: #005eb8;
+                padding: 1rem;
+                opacity: 0;
+                transform: translateY(20%);
+                transition: all 0.3s ease-in-out;
+            }
+
+            #mobileNav.open {
+                display: block;
+                opacity: 1;
+                transform: translateY(0);
+                animation: reveal 0.3s ease-in-out;
+            }
+
+            #mobileNav ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            #mobileNav li {
+                margin-bottom: 1rem;
+            }
+
+            #mobileNav a {
+                color: white;
+                font-size: 1.2rem;
+                text-decoration: none;
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .bg-blue-900 {
+            /* nhs blue */
+            background-color: #005eb8;
+        }
+
+        /* New Mobile Navigation Menu Styles */
+        .mobile-nav-toggle {
+            display: none;
+        }
+
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #005eb8;
+            padding: 1rem;
+            opacity: 0;
+            transform: translateY(20%);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .mobile-nav.open {
+            opacity: 1;
+            transform: translateY(0);
+            animation: reveal 0.3s ease-in-out;
+        }
+
+        .mobile-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mobile-nav li {
+            margin-bottom: 1rem;
+        }
+
+        .mobile-nav a {
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+
+        #shrink {
+            /* nhs dark blue */
+            color: #003087;
+            margin-left: 10px;
+        }
+
+        #readmore {
+            /* nhs dark blue */
+            color: #003087;
+        }
+
+        #content ul {
+            list-style-type: disc;
+            padding-left: 2rem;
+            margin-top: 1rem;
+        }
+
+        #content ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        #content ul li a {
+            color: #005eb8;
+            transition: all 0.2s ease-in-out;
+        }
+
+        #content ul li a:hover {
+            /* dark blue */
+            color: #003087;
+        }
+
+        #content ul li {
+            /* grey */
+            color: #595959;
+            /* disabled */
+        }
+
+        .thing ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .thing ul li {
+            list-style-type: none;
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.5;
+        }
+
+        .thing ul li:before {
+            content: "";
+            position: absolute;
+            left: 0.25rem; /* Adjust the left value as needed */
+            top: 0.6rem; /* Adjust the top value as needed */
+            transform: translate(-50%, -50%);
+            width: 0.4rem;
+            height: 0.4rem;
+            background-color: #005eb8; /* Adjust the color as needed */
+            border-radius: 50%;
+        }
+
+        .card {
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        #mobileNav {
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-white">
+        <div id="thing" class="container mx-auto px-4 py-4 flex items-center">
+            <div>
+                <img src="https://mcrplasticsurgeryandburns.co.uk/cfpsb.jpg" alt="Manchester University NHS Foundation Trust" id="logo" class="h-16">
+            </div>
+            <div>
+                <h1 class="text-4xl font-bold" id="titleText">The Manchester Centre for Plastic Surgery and Burns</h1>
+            </div>
+            <button id="mobileMenuButton" class="mobile-nav-toggle text-blue-900 focus:outline-none md:hidden">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M3 5h18a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2zm0 7h18a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2zm0 7h18a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+        <nav id="nav" class="bg-blue-900">
+            <div class="container mx-auto px-4 py-4">
+                <ul class="flex justify-center text-white">
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/">Home</a></li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/News.html">News</a></li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/Services.html">Our services</a></li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/Locations.html">Our locations</a>
+                    </li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/OurTeam.html">Our team</a></li>
+                    <li><a href="https://mcrplasticsurgeryandburns.co.uk/contact-us/">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="mobileNav" class="mobile-nav hidden">
+            <div class="container mx-auto px-4 py-4">
+                <button id="mobileCloseButton" class="text-white text-2xl absolute top-4 right-4 focus:outline-none">&times;</button>
+                <ul class="text-white">
+                    <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/">Home</a></li>
+                    <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/News.html">News</a></li>
+                    <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/Services.html">Our services</a></li>
+                    <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/Locations.html">Our locations</a></li>
+                    <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/OurTeam.html">Our team</a></li>
+                    <li><a href="https://mcrplasticsurgeryandburns.co.uk/contact-us/">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto px-4 py-8">
+        <section id="content" class="bg-white shadow-md rounded-lg p-6 thing">
+            <h2 class="text-3xl font-bold">Allied professionals</h2>
+            <p>As well as the surgical team, the Centre couldn’t run without the help of our nursing staff, hand therapists, and other allied health professionals. These include:</p>
+            
+            <div class="card bg-gray-100 shadow-md mt-4">
+                <h3 class="text-xl font-bold">Ward Nursing staff</h3>
+                <p>With experience in Plastic Surgery nursing, Burns and ITU or pediatric specialization as appropriate.</p>
+            </div>
+            
+            <div class="card bg-gray-100 shadow-md">
+                <h3 class="text-xl font-bold">Therapists</h3>
+                <p>Our wards are covered by both general occupational and physiotherapists as well as having access to our specialized and world-class hand therapists.</p>
+            </div>
+            
+            <div class="card bg-gray-100 shadow-md">
+                <h3 class="text-xl font-bold">Dietetics</h3>
+                <p>We have access to dieticians with training to manage patients with large surface area wounds often met in Plastic Surgery and in patients with burns.</p>
+            </div>
+            
+            <div class="card bg-gray-100 shadow-md">
+                <h3 class="text-xl font-bold">Specialist Nurses</h3>
+                <p>Our clinics are staffed by nursing staff with a thorough knowledge of Plastic Surgery and, in particular, wound care and dressings. Further, we have a team of clinical support nurses who manage the trauma and telemedicine clinics. Running independent clinics, our Burns Outreach and Complex Wound Senior Nurses provide an invaluable service to patients at UHSM and in the community. We also have a dedicated Skin Cancer Specialist Nurse who is the primary contact and familiar face for our skin oncology patients. Sr. Julie Collins is also able to review skin cancer patients independently in clinic.</p>
+            </div>
+            
+            <div class="card bg-gray-100 shadow-md">
+                <h3 class="text-xl font-bold">Clinical Psychology</h3>
+                <p>Within the UHSM we have two Clinical Psychologists – one as part of the Burns MDT and the other managing Plastic Surgery patients. There is a children’s psychologist as part of the team at RMCH, covering both Plastics and Burns.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-blue-900 py-4">
+        <div class="container mx-auto px-4">
+            <p class="text-center text-white">Part of <a href="http://www.mft.nhs.uk/" class="text-blue-200 hover:text-white">Manchester University NHS Foundation Trust</a></p>
+        </div>
+    </footer>
+    <script>
+        const mobileMenuButton = document.getElementById('mobileMenuButton');
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileCloseButton = document.getElementById('mobileCloseButton');
+
+        mobileMenuButton.addEventListener('click', () => {
+            // check if it's been closed before as it will be translated down and we need to reset that
+            if (mobileNav.style.transform === 'translateY(100%)') {
+                mobileNav.style.transform = 'translateY(0)';
+                mobileNav.style.display = 'block';
+            }
+            mobileNav.classList.add('open');
+        });
+
+        mobileCloseButton.addEventListener('click', () => {
+            mobileNav.style.transform = 'translateY(100%)';
+
+            // Delay hiding the mobile navigation menu to allow the slide-down animation to play
+            setTimeout(() => {
+                mobileNav.style.display = 'none';
+            }, 300);
+        });
+    </script>
+</body>
+</html>

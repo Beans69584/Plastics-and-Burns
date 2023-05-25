@@ -1,0 +1,400 @@
+    <link rel="icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" type="image/png" sizes="96x96">
+    <link rel="icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" sizes="180x180">
+    <link rel="mask-icon" href="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" color="#005eb8">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr James D Bedford MSc FRCS(Plast) BrDipHandSurg &mdash; Manchester Centre for Plastic Surgery & Burns</title>
+   <!-- Add Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://mcrplasticsurgeryandburns.co.uk/style.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <style>
+        /* import font for easier reading */
+        /* something like Nunito */
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+        body {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+        }
+
+        #titleText {
+            font-family: 'Lato';
+            color: #005eb8;
+        }
+
+        /* navbar links hover */
+        #nav a:hover {
+            transition: all 0.2s ease-in-out;
+            /* white by default so dim it a bit */
+            color: #d9d9d9;
+        }
+
+        /* our services/locations divs hover cubic-bezier effect */
+
+        @media screen and (max-width: 767px) {
+            /* Example: Adjust styles for mobile devices */
+            #titleText {
+                display: none;
+            }
+
+            #logo {
+                display: none;
+            }
+
+            #nav {
+                display: none;
+            }
+
+            #mobileMenuButton {
+                display: block;
+            }
+
+            #mobileNav {
+                display: none;
+            }
+
+            /* Adjust other styles for mobile */
+        }
+
+        @media screen and (max-width: 1100px) {
+            /* Example: Adjust styles for mobile devices */
+            #titleText {
+                display: none;
+            }
+
+            #logo {
+                display: none;
+            }
+
+            #nav {
+                display: none;
+            }
+
+            #mobileMenuButton {
+                display: block;
+            }
+
+            #mobileNav {
+                display: none;
+            }
+
+            /* Adjust other styles for mobile */
+        }
+
+        /* Styles for mobile navigation menu */
+        @keyframes fadeDown {
+            0% {
+                opacity: 0;
+                transform: translateY(0%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes reveal {
+            0% {
+                opacity: 0;
+                transform: translateY(20%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        * {
+            transition: all 0.3s ease-in-out;
+        }
+
+        @media screen and (max-width: 1100px) {
+            #mobileNav {
+                display: none;
+                background-color: #005eb8;
+                padding: 1rem;
+                opacity: 0;
+                transform: translateY(20%);
+                transition: all 0.3s ease-in-out;
+            }
+
+            #mobileNav.open {
+                display: block;
+                opacity: 1;
+                transform: translateY(0);
+                animation: reveal 0.3s ease-in-out;
+            }
+
+            #mobileNav ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            #mobileNav li {
+                margin-bottom: 1rem;
+            }
+
+            #mobileNav a {
+                color: white;
+                font-size: 1.2rem;
+                text-decoration: none;
+            }
+        }
+
+         .hidden {
+            display: none;
+        }
+
+        .bg-blue-900 {
+            /* nhs blue */
+            background-color: #005eb8;
+        }
+
+        /* New Mobile Navigation Menu Styles */
+        .mobile-nav-toggle {
+            display: none;
+        }
+
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #005eb8;
+            padding: 1rem;
+            opacity: 0;
+            transform: translateY(20%);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .mobile-nav.open {
+            opacity: 1;
+            transform: translateY(0);
+            animation: reveal 0.3s ease-in-out;
+        }
+
+        .mobile-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mobile-nav li {
+            margin-bottom: 1rem;
+        }
+
+        .mobile-nav a {
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+
+        #shrink {
+            /* nhs dark blue */
+           color: #003087;
+            margin-left: 10px;
+        }
+
+        #readmore {
+            /* nhs dark blue */
+            color: #003087;
+        }    </style>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-white">
+        <div id="thing" class="container mx-auto px-4 py-4 flex items-center">
+            <div>
+                <img src="https://mcrplasticsurgeryandburns.co.uk/cfpsb.jpg" alt="Manchester University NHS Foundation Trust" id="logo" class="h-16">
+            </div>
+            <div>
+                <h1 class="text-4xl font-bold" id="titleText">The Manchester Centre for Plastic Surgery and Burns</h1>
+            </div>
+            <button id="mobileMenuButton" class="mobile-nav-toggle text-blue-900 focus:outline-none md:hidden">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M3 5h18a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2zm0 7h18a1 1 0 0 1 0 2H3a1 1 0 1 1 0-2zm0 7h18a1 1 0 0 1 0 2H3a1 1 0 0 1 0-2z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+        <nav id="nav" class="bg-blue-900">
+            <div class="container mx-auto px-4 py-4">
+                <ul class="flex justify-center text-white">
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/">Home</a></li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/News.html">News</a></li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/Services.html">Our services</a></li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/Locations.html">Our locations</a>
+                    </li>
+                    <li class="mr-6"><a href="https://mcrplasticsurgeryandburns.co.uk/OurTeam.html">Our team</a></li>
+                    <li><a href="https://mcrplasticsurgeryandburns.co.uk/contact-us/">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+ <nav id="mobileNav" class="mobile-nav hidden">
+    <div class="container mx-auto px-4 py-4">
+        <button id="mobileCloseButton" class="text-white text-2xl absolute top-4 right-4 focus:outline-none">&times;</button>
+        <ul class="text-white">
+            <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/">Home</a></li>
+            <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/News.html">News</a></li>
+            <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/Services.html">Our services</a></li>
+            <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/Locations.html">Our locations</a></li>
+            <li class="mb-2"><a href="https://mcrplasticsurgeryandburns.co.uk/OurTeam.html">Our team</a></li>
+            <li><a href="https://mcrplasticsurgeryandburns.co.uk/contact-us/">Contact us</a></li>
+        </ul>
+    </div>
+</nav>
+     </header>
+<script>
+    const mobileMenuButton = document.getElementById('mobileMenuButton');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileCloseButton = document.getElementById('mobileCloseButton');
+
+    mobileMenuButton.addEventListener('click', () => {
+        // check if it's been closed before as it will be translated down and we need to reset that
+        if (mobileNav.style.transform === 'translateY(100%)') {
+            mobileNav.style.transform = 'translateY(0)';
+            mobileNav.style.display = 'block';
+        }
+        mobileNav.classList.add('open');
+    });
+
+    mobileCloseButton.addEventListener('click', () => {
+        mobileNav.style.transform = 'translateY(100%)';
+
+        // Delay hiding the mobile navigation menu to allow the slide-down animation to play
+        setTimeout(() => {
+            mobileNav.style.display = 'none';
+        }, 300);
+    });
+</script>
+
+    <main class="container mx-auto px-4 py-8">
+        <article class="bg-white shadow-md rounded-lg p-6 shadow-md">
+            <h2 class="text-3xl font-bold mb-4">Mr James D Bedford MSc FRCS(Plast) BrDipHandSurg</h2>
+            <p class="text-gray-800 mb-6 "><img src="https://mcrplasticsurgeryandburns.co.uk/data/uploads/mugshots/jdb.jpg" alt="" class="w-56 shadow-md rounded-lg h-auto"></p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gray-100 text-blue-900 rounded-lg p-6 shadow-md shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Biography</h3>
+<p id="bio">James Bedford is Specialty Lead Consultant for Burns &amp; Plastic Surgery at Manchester University NHS Foundation Trust. He joined the department in 2018 following training in plastic and hand surgery in the North West, followed by a National Advanced Training Fellowship in Hand Surgery in Leeds. His special interests are in children's hand surgery and nerve surgery including brachial plexus injury and spasticity. He undertakes specialist clinics for the Greater Manchester Brachial Plexus service, the Children's Hand, Elbow and Shoulder Surgery (CHESS) service, and at the Specialised Ability Centre. Mr Bedford enjoyes collaborating with surgeons in diverse specialties including orthopaedics, neurosurgery, general surgery and cardiothoracics for patients who require complex soft tissue reconstruction.</p>
+                </div>
+                <div class="bg-gray-100 text-blue-900 rounded-lg p-6 shadow-md shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Special Interests</h3>
+                    <ul class="list-disc list-inside text-gray-700 mb-4">
+	<li>Congenital and children's hand surgery and microsurgery</li>
+	<li>Peripheral nerve injury including brachial plexus</li>
+	<li>Spasticity of the hand and tetraplegia</li>
+	<li>Limb and general complex reconstruction</li>
+                    </ul>
+                </div>
+            </div>
+<div class="mt-8">
+    <h3 class="text-2xl font-bold mb-4">Clinic times &amp; locations</h3>
+    <div class="bg-gray-100 text-blue-900 rounded-lg p-6 shadow-md shadow-md">
+        <h1 style="font-size: 25px;"><strong>NHS Clinics</strong></h1>
+        <ul>
+            <li>Adults: alternate Thursdays</li>
+            <li>Children's: alternate Thursdays - AM at Wythenhsawe, PM at RMCH</li>
+        </ul>
+        <br />
+        <h1 style="font-size: 25px;"><strong>Special NHS Clinics</strong></h1>
+        <ul>
+            <li>Children's Hand, Elbow &amp; Shoulder Surgery (CHESS) with Mr Matthew Nixon: every 12 weeks</li>
+            <li>Congenital limb loss clinic with Dr Bhaskar Basu: every 12 weeks</li>
+            <li>GM adult spasticity clinic with Mr Anuj Mishra: every 12 weeks</li>
+            <li>GM brachial plexus MDT clinic: every 4 weeks</li>
+        </ul>
+        <br />
+        <h1 style="font-size: 25px;"><strong>Private Clinics</strong></h1>
+        <ul>
+            <li>Mondays at <a href="https://www.bmihealthcare.co.uk/consultants/james-bedford" class="text-white underline">BMI The Alexandra Hospital, Cheadle</a></li>
+            <li>Tuesdays at <a href="https://www.bmihealthcare.co.uk/consultants/james-bedford" class="text-white underline">BMI The Highfield Hospital, Rochdale</a></li>
+        </ul>
+    </div>
+</div>
+
+
+                </div>
+            </div>
+                    <div class="mt-8">
+            <h3 class="text-2xl font-bold mb-4"><a href="https://mcrplasticsurgeryandburns.co.uk/our-consultants/mr-james-bedford/">Contact Details</a></h3>
+            <div class="bg-gray-100 text-blue-900 rounded-lg p-6 shadow-md shadow-md">
+                <ul>
+	<li>Wythenshawe secretary: <a href="mailto:linda.dyson@mft.nhs.uk">Linda Dyson</a>, <a href="tel:0161 291 6758">0161 291 6758</a></li>
+	<li>RMCH secretary: <a href="mailto:julie.mcgiffen@mft.nhs.uk">Julie McGiffen</a>, <a href="tel:0161 701 8140">0161 701 8140</a></li>
+	<li>Private secretary: <a href="mailto:helen@jamesbedford.co">Helen Johnstone</a>, <a href="tel:07380 132 946">07380 132 946</a>&nbsp;- <a href="https://mcrplasticsurgeryandburns.co.uk/online-booking.htm">book an appointment online</a></li>
+                    </ul>
+        </article>
+        <!-- add contact details section -->
+    </main>
+
+    <footer class="bg-blue-900 py-4">
+        <div class="container mx-auto px-4">
+            <p class="text-center text-white">Part of <a href="http://www.mft.nhs.uk/" class="text-blue-200 hover:text-white">Manchester University NHS Foundation Trust</a></p>
+        </div>
+    </footer>
+      <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // when page loads, shrink the biography to 300 characters and add a "read more" button to expand it
+        var bio = document.getElementById("bio");
+        var bioText = bio.innerHTML;
+        // limit it to 150 words (not characters)
+        // if it's less than 100 words, don't add the "read more" button
+        if (bioText.split(" ").length < 75) {
+            return;
+        }
+        bio.innerHTML = bioText.split(" ").splice(0, 75).join(" ") + "...  ";
+        // remove event listener
+        bio.innerHTML += "<button id='readMore' class='text-blue-900 focus:outline-none' onclick='growText()'>Show more</button>";
+
+        // when the "read more" button is clicked, expand the biography to full length
+        document.getElementById("readMore").addEventListener("click", function() {
+            bio.innerHTML = bioText;
+            // add shrink button if it doesn't already exist
+            if (document.getElementById("shrink") == null) {
+                bio.innerHTML += "<button id='shrink' class='text-blue-900 focus:outline-none' onclick='shrinkText()'>Show less</button>";
+            }
+        });
+    });
+    function growText() {
+        // when the "read more" button is clicked, expand the biography to full length
+        var bio = document.getElementById("bio");
+        var bioText = bio.innerHTML;
+        bio.innerHTML = bioText;
+    }
+    function shrinkText() {
+        // when the "shrink" button is clicked, shrink the biography to 150 words
+        var bio = document.getElementById("bio");
+        var bioText = bio.innerHTML;
+        // limit it to 150 words (not characters)
+        bio.innerHTML = bioText.split(" ").splice(0, 75).join(" ") + "...  ";
+        // remove event listener
+        bio.innerHTML += "<button id='readMore' class='text-blue-900 focus:outline-none'>Show more</button>";
+
+        // when the "read more" button is clicked, expand the biography to full length
+        document.getElementById("readMore").addEventListener("click", function() {
+            bio.innerHTML = bioText;
+            // add shrink button if it doesn't already exist
+            if (document.getElementById("shrink") == null) {
+                bio.innerHTML += "<button id='shrink' class='text-blue-900 focus:outline-none' onclick='shrinkText()'>Show less</button>";
+            }
+        });
+    }
+</script>
+</body>
+
+</html>

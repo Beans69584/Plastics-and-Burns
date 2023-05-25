@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+    /* monserrat */
+    font-family: 'Nunito', sans-serif !important;
+    background-color: #f5f5f5;
+}
+
+.logo {
+    color: #555;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+#logo {
+    margin-right: 40px;
+}
+
+::-webkit-scrollbar {
+    display: none !important;
+}
