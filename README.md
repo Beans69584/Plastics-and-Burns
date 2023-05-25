@@ -1,7 +1,7 @@
 # Manchester Centre for Plastic Surgery & Burns
 
 <div style="display: flex; align-items: center;">
-  <img src="https://mcrplasticsurgeryandburns.co.uk/cfpsb.jpg" alt="Manchester Centre for Plastic Surgery & Burns" height="100">
+  <img src="https://mcrplasticsurgeryandburns.co.uk/cfpsb.png" alt="Manchester Centre for Plastic Surgery & Burns" height="100">
   <img src="https://mcrplasticsurgeryandburns.co.uk/mft.png" alt="Manchester University NHS Foundation Trust" height="100">
   <img src="https://mcrplasticsurgeryandburns.co.uk/nhs.png" alt="NHS Logo" height="100">
 </div>
