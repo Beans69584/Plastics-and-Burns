@@ -47,6 +47,7 @@ To view the website locally or make changes, follow these steps:
 1. Clone the repository: `git clone https://github.com/your-username/repository-name.git`
 2. Navigate to the project directory: `cd repository-name`
 3. Open the `index.html` file in your preferred web browser.
+4. To use php pages make sure you have the curl extension enabled and run a local php webserver ```php -S ip:port```
 
 ## Contributing
 
@@ -58,4 +59,4 @@ This project is licensed under the [AGPL License](LICENSE).
 
 ---
 
-Part of [Manchester University NHS Foundation Trust](http://www.mft.nhs.uk/)
+Site is part of [Manchester University NHS Foundation Trust](http://www.mft.nhs.uk/)
