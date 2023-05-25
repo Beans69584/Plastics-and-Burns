@@ -1,7 +1,9 @@
 # Manchester Centre for Plastic Surgery & Burns
 
-![Manchester Centre for Plastic Surgery & Burns](https://mcrplasticsurgeryandburns.co.uk/cfpsb.jpg)
-![Manchester University NHS Foundation Trust](https://mcrplasticsurgeryandburns.co.uk/mft.png) ![NHS Logo](https://mcrplasticsurgeryandburns.co.uk/nhs.png)
+<img src="https://mcrplasticsurgeryandburns.co.uk/cfpsb.jpg" alt="Manchester Centre for Plastic Surgery & Burns" width="100">
+<img src="https://mcrplasticsurgeryandburns.co.uk/mft.png" alt="Manchester University NHS Foundation Trust" width="100">
+<img src="https://mcrplasticsurgeryandburns.co.uk/nhs.png" alt="NHS Logo" width="100">
+
 
 The Manchester Centre for Plastic Surgery and Burns provides specialist care to the population of Greater Manchester and is the major tertiary referral centre for complex reconstruction in the North West of England.
 
