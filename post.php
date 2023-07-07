@@ -382,8 +382,8 @@
 
     /* image styling */
     .post-content img {
-        max-width: 100%;
-        height: auto;
+        height: 500px;
+        width: auto;
         margin: 0;
     }
 
@@ -420,6 +420,73 @@
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
+
+  .wp-block-media-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2rem 0;
+  }
+
+    .wp-block-media-text__content {
+        /* make the content align with the media */
+        width: 50%;
+    }
+
+    .wp-block-media-text__media {
+        /* make the media align with the content */
+        margin-right: 2rem;
+        width: 50%;
+    }
+    
+    .wp-block-media-text__media img {
+        width: auto;
+    }
+
+    .wp-social-link {
+        margin-right: 1rem;
+    }
+
+    .wp-social-link img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .wp-social-link img:hover {
+        opacity: 0.8;
+    }
+    .wp-block-social-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 2rem 0;
+    }
+
+    /* make svg 40px */
+    .wp-block-social-link svg {
+        width: 32px !important;
+        height: 32px !important;
+    }
+
+    .wp-block-social-link-label {
+        display: none;
+    }
+
+    /* on mobile make the media and content stack */
+    @media (max-width: 1100px) {
+        .wp-block-media-text {
+            flex-direction: column;
+        }
+
+        .wp-block-media-text__content {
+            width: 100%;
+        }
+
+        .wp-block-media-text__media {
+            margin-right: 0;
+            width: 100%;
+        }
+    }
 </style>
 <script>
   document.addEventListener('DOMContentLoaded', () => {

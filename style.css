@@ -42,3 +42,7 @@ main {
 ::-webkit-scrollbar {
     display: none !important;
 }
+
+#mobileNav {
+  z-index: 9999 !important;
+}
